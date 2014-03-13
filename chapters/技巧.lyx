@@ -1,0 +1,928 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass USTCthesis
+\begin_preamble
+%Created by jmcui 
+%\graphicspath{{C:/Users/jmcui/Desktop/Lyxthesis/USTCthesis}}
+\end_preamble
+\options doctor,twoside,adobefont
+\use_default_options false
+\master ../Main.lyx
+\begin_modules
+theorems-ams
+\end_modules
+\maintain_unincluded_children false
+\begin_local_layout
+NoStyle	Thanks
+NoStyle	ChapterSpecial
+NoStyle	Abstract
+NoStyle	EnglishAbstract
+\end_local_layout
+\language chinese-simplified
+\language_package babel
+\inputencoding GBK
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\font_cjk fs
+
+\graphics default
+\default_output_format pdf4
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle false
+\papersize default
+\use_geometry false
+\use_amsmath 2
+\use_esint 2
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index 索引
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+使用技巧
+\end_layout
+
+\begin_layout Standard
+\align center
+建议你阅读完本章，尤其是LyX的新用户
+\end_layout
+
+\begin_layout Section
+帮助文档
+\end_layout
+
+\begin_layout Standard
+LyX的帮助文档比较全面，有问题的时候要先到此处来寻找，新用户可以几分钟看一下入门教程，上手是非常快的。
+\end_layout
+
+\begin_layout Section
+目录和导航
+\end_layout
+
+\begin_layout Standard
+利用目录导航可以方便在不同章节和对象中切换。可以测试点一下导航菜单。也可以将文档菜单中的目录选项打开进行导航，如果你的显示器为宽屏，推荐你这么做。
+\end_layout
+
+\begin_layout Section
+插图和表格
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+注意：
+\series default
+图片文件的路径要取相对路径，以备整个文件夹移动后，仍然可以找到图片文件
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+论文中的插图和表格以浮动对象的方式实现，这样可以能放到图片列表中。插入浮动图片（表格），然后在框架里面插入图片（表格），最后完善caption。在浮动框架里面还
+可以再次插入浮动图片（表格），以实现子图（表）功能。
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../ustc_logo_text.eps
+	width 5cm
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+USTC Name
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../ustc_logo_fig.eps
+	lyxscale 30
+	width 4cm
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+USTC Logo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:USTC-Elements"
+
+\end_inset
+
+USTC Elements
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+include 文件
+\end_layout
+
+\begin_layout Standard
+如果你需要新建一章，这一章以单独文件存在（我们称为章节文件），建议你这么做，省去设置文档的麻烦：
+\end_layout
+
+\begin_layout Enumerate
+复制论文模板的第一章，并将其重命名为你需要的名字。
+\end_layout
+
+\begin_layout Enumerate
+在主文档（Main.lyx）正文处include你刚才重命名的文件。插入的位置由你需要编排的章节顺序而定，新章节编辑修改这个文件即可。
+\end_layout
+
+\begin_layout Standard
+与Tex类似，Lyx可以将一个大文件分割成几个小文件，然后通过include的方法整合到一块编译。具体操作：插入\SpecialChar \menuseparator
+文件\SpecialChar \menuseparator
+子文档。使用包含命令的文件为主文档，被包含的
+文件为子文档，子文档是.lyx也可以包含tex文件。
+\end_layout
+
+\begin_layout Standard
+如果你已经有tex文件，没必要将它转换为lyx，可以只保留
+\backslash
+begin{document}和
+\backslash
+end{document}之间的文档内容，然后将之包进主文档 (如果导言区有自定义命令，将它复制到主文档的导言区)。
+\end_layout
+
+\begin_layout Standard
+如果include文件是.lyx文件，可以在文档\SpecialChar \menuseparator
+首选项\SpecialChar \menuseparator
+文档类 中设置主文档。设置主文档优点是子文档的导航是按主文档中的所有章节进行导航，而不是按照子文档中本章节进
+行导航。使用导航功能便于在文件和章节中切换。由于模板中子文档都已经设置为Main.lyx为主文档，所以通过复制的方法新建章节文件时，选项就不需要设置了。
+\end_layout
+
+\begin_layout Standard
+使用章节文件的优势是你在这个章节文件里直接编译查看，此时编译就只对本章进行，可以节省大量的编译时间。而编译整篇论文只需要在Main文档中编译查看即可。
+\end_layout
+
+\begin_layout Section
+公式
+\end_layout
+
+\begin_layout Subsection
+Tips
+\end_layout
+
+\begin_layout Enumerate
+快捷键CLT+M (行内公式),CLT+SHIFT+M (独立公式)。公式中按CLT+SHIFT+M可在行内公式和独立公式切换
+\end_layout
+
+\begin_layout Enumerate
+在公式环境中可以按工具键入公式，也可以直接按tex命令键入，例如^ 和 _, 
+\backslash
+cdot
+\end_layout
+
+\begin_layout Enumerate
+插入括号，括号图标的最后一个可以配置需要的括号
+\end_layout
+
+\begin_layout Enumerate
+公式编号和标签，只有独立公式可以编号，点中公式右键选择所需的编号类型和标签即可。这与其他环境添加标签是不同的，其他环境下直接按标签工具即可添加，公式环境下标签工
+具不可用，只能通过右键设置。不过引用方法是一样的
+\end_layout
+
+\begin_layout Enumerate
+可以直接复制公式的tex文本到公式环境中，即可以直接从论文中复制公式
+\end_layout
+
+\begin_layout Enumerate
+换行公式键入：在公式里ctl+enter 即可换行，可以通过右键设置公式属性，例如将整个公式编号还是某一行编号
+\end_layout
+
+\begin_layout Section
+数学定理
+\end_layout
+
+\begin_layout Subsection
+添加定理
+\end_layout
+
+\begin_layout Standard
+论文模板中并没有提供各种定理环境，因为通过在文档中插入模块来实现所需的定理环。在 文档\SpecialChar \menuseparator
+首选项\SpecialChar \menuseparator
+模块 中可以根据需要载入具体格式的模块。 本章文档加入了AMS的Th
+eorem普通模块，在格式下拉菜单下可以看到添加了很多定理格式。书写一条语句用定理格式化，如下
+\end_layout
+
+\begin_layout Theorem
+任何一个一元复系数多项式都至少有一个复数根
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:algebra"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+标签和引用
+\end_layout
+
+\begin_layout Subsection
+添加标签
+\end_layout
+
+\begin_layout Standard
+光标放到需要标记的环境或者文本中，然后选择 插入\SpecialChar \menuseparator
+标签， 最后设置标签的名字。也可以直接使用工具栏上的插入标签工具。LyX会很聪明的给标签一个默认名字，这个名字包
+含前缀（冒号前的内容）和名字。你可以自由的修改标签的名字，建议前缀不要修改，因为前缀会与后面的格式化引用有关，具体看
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:引用标签"
+
+\end_inset
+
+。
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+注意：
+\series default
+公式不是通过插入标签添加标签的，而是通过右键设置独立公式，行内公式是不提供标签的
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+引用标签
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:引用标签"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+光标放到需要标记的环境或者文本中，然后选择 插入\SpecialChar \menuseparator
+交叉引用， 选择引用的标签。也可以直接使用工具栏上的插入交叉引用工具。注意有多种引用方式可以选择的，右键点击交叉
+引用的对象可以看到几种引用的对象：
+\end_layout
+
+\begin_layout Enumerate
+<Reference>
+\end_layout
+
+\begin_layout Enumerate
+(<Reference>)
+\end_layout
+
+\begin_layout Enumerate
+<page>
+\end_layout
+
+\begin_layout Enumerate
+On Page <page>
+\end_layout
+
+\begin_layout Enumerate
+<Reference> On <page>
+\end_layout
+
+\begin_layout Enumerate
+Formatted Reference
+\end_layout
+
+\begin_layout Enumerate
+Textual 
+\end_layout
+
+\begin_layout Standard
+前5种看名字即可明白，第7种就是引用原文。这里主要说Formatted Reference的使用，如果在视图中显示tex代码，会发现是用了一条
+\backslash
+prettyref的命令或者
+\backslash
+##ref，这取决与你在LyX 文档首选项\SpecialChar \menuseparator
+文档类 中选择使用prettyref还是refstyle。熟悉Tex的同学明白怎么回事了。建议使用默认的prettyr
+ef，你可以直接在Lyx中修改引用的格式，插入tex几条命令即可。举例如下，冒号后是引用格式的效果
+\end_layout
+
+\begin_layout Itemize
+直接引用<Reference>:
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:algebra"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+格式引用Formatted Reference:
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "thm:algebra"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+可见直接引用只是对应图、公式、定理等的编号，格式引用则可以附加一定文字或者格式，可以为我们减少一些重复性劳动。编号前的theorem是prettyref中对定理
+环境预定义好的。如果我们需要显示一个中文的格式，例如“定理 1”，可以插入如下tex代码
+\end_layout
+
+\begin_layout LyX-Code
+
+\backslash
+newrefformat{thm}{定理 
+\backslash
+ref{#1}}
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newrefformat{thm}{定理 
+\backslash
+ref{#1}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+设置后的格式引用，冒号后是效果
+\end_layout
+
+\begin_layout Itemize
+格式引用Formatted Reference:
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "thm:algebra"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+下一个问题是如何知道对哪条命令进行设置（本例中是thm），这与你所引用标签的前缀有关，即标签冒号前的命令。这些都可以通过标签机制自由选择和定义的。
+\end_layout
+
+\begin_layout Standard
+当然我们能还可以使用hyperref包对引用添加链接性质，方便在pdf文档中查看，设置如下
+\end_layout
+
+\begin_layout LyX-Code
+
+\backslash
+newrefformat{thm}{
+\backslash
+hyperref[#1]{定理~
+\backslash
+ref*{#1}}}
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newrefformat{thm}{
+\backslash
+hyperref[#1]{定理~
+\backslash
+ref*{#1}}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+设置后的格式引用，冒号后是效果
+\end_layout
+
+\begin_layout Itemize
+格式引用Formatted Reference:
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "thm:algebra"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+生成pdf后，可以点击测试链接。如果想统一定义一些格式，可以在模板中或者Lyx文档的导言区进行设置。
+\end_layout
+
+\begin_layout Standard
+模板已经把图和表的格式引用定义好了，具有链接性质。图片的格式引用效果如下：
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:USTC-Elements"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+参考文献
+\end_layout
+
+\begin_layout Standard
+参考文献用Bibtex实现（插入\SpecialChar \menuseparator
+目录/列表\SpecialChar \menuseparator
+Bibtex引用），已经放置在在Main文档中，这样其他子文当可以使用文献引工具引用里面的条目。添加文献只需要在Ref.
+bib中添加条目，然后在文中引用即可。可以使用Jabref直接编辑bib文件
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://jabref.sourceforge.net/
+\end_layout
+
+\end_inset
+
+。可以通过工具\SpecialChar \menuseparator
+首选项\SpecialChar \menuseparator
+File Handing\SpecialChar \menuseparator
+File Formats 来设置对应文件的编辑器。
+\end_layout
+
+\begin_layout Standard
+这是范例
+\begin_inset CommandInset citation
+LatexCommand cite
+key "faraon2010resonant"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+书写程序代码
+\end_layout
+
+\begin_layout Standard
+要实现C、Matlab等语言语法高亮显示，在Latex中可以使用listings包。相应的在Lyx中可以用以下方式插入： 插入\SpecialChar \menuseparator
+Program Listing。在
+输入框内写入代码后，右键设置Listing的属性即可（右键Settings）。
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "breaklines=true,language=Python,numbers=left,numberstyle={\tiny},stepnumber=1"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+import time 
+\end_layout
+
+\begin_layout Plain Layout
+
+import os.path 
+\end_layout
+
+\begin_layout Plain Layout
+
+import wx 
+\end_layout
+
+\begin_layout Plain Layout
+
+import scipy 
+\end_layout
+
+\begin_layout Plain Layout
+
+import matplotlib.pyplot as plt 
+\end_layout
+
+\begin_layout Plain Layout
+
+from wx.lib.wordwrap import wordwrap
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Copyright =
+\backslash
+ """ Copyright (c) 2011 Luis Andre Fernandes
+\end_layout
+
+\begin_layout Plain Layout
+
+This work is provided by the copyright holders and contributors 'as is'
+\backslash
+ and any express or implied warranties, including, but not limited to,
+\backslash
+ the implied warranties of merchantability and fitness for a particular
+\backslash
+ purpose are disclaimed.
+ In no event shall the copyright owener or contributors
+\backslash
+ be liable for any direct, indirect, incidental, special, exemplary, or
+\backslash
+ consequential damages (including, but not limited to, procurement of substitute
+\backslash
+ goods or services; loss of use, data, or profits; or business interruption)
+\backslash
+ however caused and on any theory of liability, whether in contract, strict
+\backslash
+ liability, or tort (including negligence or otherwise) arising in any way
+ out
+\backslash
+ of the use of this work, even if advised of the possibility of such damage.
+\end_layout
+
+\begin_layout Plain Layout
+
+Copying and distribution of this file, with or without modification,
+\backslash
+ are permitted in any medium without royalty provided the copyright
+\backslash
+ notice and this notice are preserved.
+ """
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+error = [0,0,1,1,1,1] # Variable flag to trigger Frame.ErrorAlert()
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+选择字号
+\end_layout
+
+\begin_layout Standard
+字号选择使用ctex重的zihao命令，例如
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\backslash
+zihao{4}
+\end_layout
+
+\end_inset
+
+四号字体：
+\backslash
+zihao{4}
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\backslash
+zihao{-4}
+\end_layout
+
+\end_inset
+
+小四字体：
+\backslash
+zihao{-4}
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+特殊章节
+\end_layout
+
+\begin_layout Section
+更多技巧
+\end_layout
+
+\begin_layout Subsection
+使用分支
+\end_layout
+
+\begin_layout Standard
+使用分支可以控制产生几个不同的版本，例如我们不想在公开的论文中提到过多的细节，但是想在小组内部看到这些细节。我们可以建立一个Group分支，把这些细节写入Gro
+up分支。激活或者关闭Group分支，编译就会得到小组内部版本和公开版本。
+\end_layout
+
+\begin_layout Itemize
+首先建立分支：在Main.lyx中 文档\SpecialChar \menuseparator
+首选项\SpecialChar \menuseparator
+分支 ，新建即可
+\end_layout
+
+\begin_layout Itemize
+插入分支：插入\SpecialChar \menuseparator
+分支 选择具体分支即可
+\end_layout
+
+\begin_layout Itemize
+激活或者关闭分支：在Main.lyx中 文档\SpecialChar \menuseparator
+首选项\SpecialChar \menuseparator
+分支 ，双击对应分支对应选项处即可切换。
+\end_layout
+
+\begin_layout Subsubsection*
+实例：
+\end_layout
+
+\begin_layout Standard
+以下红色文字需要激活GroupVersion分支才可见：
+\begin_inset Branch GroupVersion
+status open
+
+\begin_layout Standard
+
+\color red
+小组内部版本可见
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+如果分支没被激活，文中分支的标签会显示叉号，激活则显示对号。在Main文档中已经预定义好了GroupVersion分支，可以直接使用。
+\end_layout
+
+\begin_layout Subsection
+设置PDF meta属性
+\end_layout
+
+\begin_layout Standard
+PDF meta属性需要在在Main.lyx中的导言区设定，默认的属性如下，可以改成自己论文的信息：
+\end_layout
+
+\begin_layout LyX-Code
+
+\backslash
+hypersetup {        
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+pdftitle={A USTCer's Thesis},
+\begin_inset Newline newline
+\end_inset
+
+pdfauthor={A USTCer},
+\begin_inset Newline newline
+\end_inset
+
+pdfsubject={Thesis,USTC,University of Science and Technology of China}
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+}
+\end_layout
+
+\begin_layout Subsection
+编辑图片
+\end_layout
+
+\begin_layout Standard
+可以通过工具\SpecialChar \menuseparator
+首选项\SpecialChar \menuseparator
+File Handing\SpecialChar \menuseparator
+File Formats 来设置相应图片格式的编辑器。这样对图片右键，选择Edit Externally即可用编辑器编
+辑。
+\end_layout
+
+\begin_layout Standard
+如果已经安装了Inkscape，矢量图格式svg文件就可以直接在LyX中使用。 
+\end_layout
+
+\begin_layout Subsection
+即时预览
+\end_layout
+
+\begin_layout Standard
+工具\SpecialChar \menuseparator
+首选项\SpecialChar \menuseparator
+外观\SpecialChar \menuseparator
+显示 即时预览 选择打开。 可以查看一些latex中复杂的公式，例如费曼图、XY-pic、树形图等。即时预览是通过预编译实现的，所以显示速度会有些
+慢。
+\end_layout
+
+\end_body
+\end_document

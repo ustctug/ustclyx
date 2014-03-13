@@ -1,0 +1,156 @@
+﻿#% Do not delete the line below; configure depends on this
+#  \DeclareLaTeXClass[USTCthesis]{USTC Thesis Lyx Template}
+# Author : Cui Jinming <jmcui@mail.ustc.edu.cn>
+
+
+Format 35
+
+Preamble
+
+\newcommand{\ChapterSpecial}[1]
+{
+		\chapter*{#1}
+		\addcontentsline{toc}{chapter}{#1}  
+		\markboth{#1}{#1}
+}
+
+EndPreamble
+
+
+Input stdclass.inc
+Input numreport.inc
+
+Sides           2
+PageStyle       Headings
+
+Style Standard
+ParSkip               0.4
+ParSep                0.4
+Spacing               onehalf
+End
+
+Style Cover
+Margin                Dynamic
+Category              Part
+LabelString           "封面"
+LabelType             Counter
+LabelCounter          part
+TocLevel              0
+LatexType             Paragraph
+LatexName             dummy
+KeepEmpty             1
+NeedProtect           1
+NextNoIndent          1
+Labelsep              xxx
+ParSkip               0.4
+TopSep                4
+BottomSep             4
+ParSep                0.8
+Align                 Center
+Alignpossible         Center
+Font
+  Series              Bold
+  Size                Huge
+  Color               Blue
+EndFont
+HTMLTag               h1
+End
+
+Style FrontMatter
+CopyStyle             Cover
+LatexType             Command
+LabelString           "扉页"
+LatexName             frontmatter
+End
+
+
+Style MainMatter
+CopyStyle             FrontMatter
+LabelString           "正文"
+LatexName             mainmatter
+End
+
+Style BackMatter
+CopyStyle             FrontMatter
+LabelString           "底页"
+LatexName             backmatter
+End
+
+##############################
+
+Style Abstract
+Margin                Static
+LatexType             Environment
+LatexName             abstract
+Category              FrontMatter
+NextNoIndent          1
+LeftMargin            MMM
+RightMargin           MMM
+ParIndent             MM
+ItemSep               0
+TopSep                0.7
+BottomSep             0.7
+ParSep                0
+Align                 Block
+LabelType             Centered_Top_Environment
+LabelString           "Abstract"
+LabelBottomSep        0.5
+Font
+Size                Small
+EndFont
+LabelFont
+Series              Bold
+Size                Large
+EndFont
+HTMLLabelFirst        1
+HTMLForceCSS          1
+HTMLStyle
+div.abstract {
+margin: 4ex;
+}
+div.abstract_item {
+		font-size: small;
+		padding-top: 1ex;
+}
+div.abstract_label {
+		font-weight: bold;
+}
+EndHTMLStyle
+End
+
+Style EnglishAbstract
+CopyStyle 		Abstract 
+LatexName             eabstract
+LabelString           "　Abstract"
+End
+
+
+#####################################
+Style ChapterSpecial
+CopyStyle 			Chapter*
+Align	        	Center
+LatexName           ChapterSpecial
+End
+
+Style Denotation
+    CopyStyle 		Description
+    LatexName 		denotation
+    HTMLTag               ddl
+	HTMLAttr              class='denotation'
+	HTMLItem              dd
+	HTMLLabel             dt
+	HTMLLabelFirst        1
+	HTMLStyle
+		ddl.denotation dt { font-weight: bold; }
+	EndHTMLStyle
+End
+#####################################
+
+NoStyle Part
+NoStyle Part*
+NoStyle Bibliography
+NoStyle Author
+NoStyle Title
+NoStyle Date
+NoStyle Address
+NoStyle Right_Address

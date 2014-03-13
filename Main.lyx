@@ -1,0 +1,325 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass USTCthesis
+\begin_preamble
+% Lyx template for USTC doctor/master thesis
+% Created by jmcui 6-23-2011 @USTC
+% use USTCthesis class: http://code.google.com/p/ustcthesis
+ 
+\usepackage{bibentry}
+
+\hypersetup
+{   
+    pdftitle={A USTCer's Thesis},
+    pdfauthor={A USTCer},
+    pdfsubject={Thesis,USTC,University of Science and Technology of China}
+}
+\end_preamble
+\options doctor,twoside,adobefont
+\use_default_options false
+\begin_modules
+theorems-ams
+\end_modules
+\maintain_unincluded_children false
+\begin_local_layout
+
+\end_local_layout
+\language chinese-simplified
+\language_package babel
+\inputencoding GBK
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\font_cjk gbsn
+
+\graphics default
+\default_output_format pdf4
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\pdf_title "USTCthesis Template"
+\pdf_author "jmcui"
+\pdf_subject "Thesis"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle false
+\pdf_quoted_options "CJKbookmarks=true,bookmarksnumbered=true,bookmarksopen=true,breaklinks=true,colorlinks=true,linkcolor=black,citecolor=black,plainpages=false,pdfstartview=FitH"
+\papersize default
+\use_geometry false
+\use_amsmath 2
+\use_esint 2
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\branch GroupVersion
+\selected 1
+\filename_suffix 0
+\color #aaaa00
+\end_branch
+\index 索引
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Main 文档
+\end_layout
+
+\begin_layout Enumerate
+整体结构，导航。同目录下USTCthesis.layout 为Lyx的 布局文件（或称为layout 文件）。注意使用 文档\SpecialChar \menuseparator
+目录 或者 导航菜单
+ 切换章节。
+\end_layout
+
+\begin_layout Enumerate
+包含文件注意使用相对路径。
+\end_layout
+
+\begin_layout Enumerate
+单独章节的lyx文件可以单独编译查看，不必在Main文档中编译查看而浪费时间。
+\end_layout
+
+\begin_layout Enumerate
+可以在Main文件里直接添加章节格式，而没必要一定包含文件，但不建议如此。
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+封面
+\end_layout
+
+\begin_layout Enumerate
+Cover.lyx实现中文封面、英文封面、书脊、授权页的生成，只需要编者填写参数即可
+\begin_inset Newline newline
+\end_inset
+
+Cover.lyx 文档\SpecialChar \menuseparator
+首选项\SpecialChar \menuseparator
+本地布局 中定义 一些格式（标题，作者，院系等), 
+\begin_inset Newline newline
+\end_inset
+
+由于是本地布局，这些格式对其他子文档是不可见的。
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "./chapters/Cover.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+扉页
+\end_layout
+
+\begin_layout Enumerate
+实现：摘要，目录，图像、表格、算法列表
+\end_layout
+
+\begin_layout Enumerate
+FrontMatter.lyx实现前言，摘要，目录，图像、表格、算法列表。可进入此文件编辑，不需要生成部分的去掉对应的命令即可
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "./chapters/FrontMatter.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout MainMatter
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Enumerate
+章节排序只需要把include的顺序改变即可。也可以直接包含 tex文件
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "chapters/介绍.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "chapters/技巧.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+参考文献用Bibtex实现，要放在Main文档中，其他子文当可以引用
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "Ref"
+options "ustcbib"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "chapters/Appendix.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+已在Apendix.lyx中设置开始附录，要在底页之前放置，底页之后会省去章的序号
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout BackMatter
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+底页之后的各章会把章序号省掉。也可以使用模板已定义好的ChapterSpecial 生成一无序号的章节。ChapterSpecial不限于在底页后，也可在正文中
+使用
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "chapters/thanks.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "chapters/发表成果.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
