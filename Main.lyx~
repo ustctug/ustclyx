@@ -1,5 +1,5 @@
-#LyX 2.1 created this file. For more info see http://www.lyx.org/
-\lyxformat 474
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
 \begin_document
 \begin_header
 \textclass USTCthesis
@@ -17,20 +17,22 @@
     pdfsubject={Thesis,USTC,University of Science and Technology of China}
 }
 \end_preamble
-\options doctor,adobefont,twoside
+\options doctor,twoside,adobefont
 \use_default_options false
 \begin_modules
 theorems-ams
 \end_modules
 \maintain_unincluded_children false
+\begin_local_layout
+
+\end_local_layout
 \language chinese-simplified
 \language_package babel
-\inputencoding gbk
+\inputencoding GBK
 \fontencoding global
 \font_roman default
 \font_sans default
 \font_typewriter default
-\font_math auto
 \font_default_family default
 \use_non_tex_fonts true
 \font_sc false
@@ -38,6 +40,7 @@ theorems-ams
 \font_sf_scale 100
 \font_tt_scale 100
 \font_cjk gbsn
+
 \graphics default
 \default_output_format pdf4
 \output_sync 0
@@ -61,24 +64,15 @@ theorems-ams
 \pdf_quoted_options "CJKbookmarks=true,bookmarksnumbered=true,bookmarksopen=true,breaklinks=true,colorlinks=true,linkcolor=black,citecolor=black,plainpages=false,pdfstartview=FitH"
 \papersize default
 \use_geometry false
-\use_package amsmath 2
-\use_package amssymb 2
-\use_package cancel 0
-\use_package esint 2
-\use_package mathdots 1
-\use_package mathtools 0
-\use_package mhchem 1
-\use_package stackrel 0
-\use_package stmaryrd 0
-\use_package undertilde 0
+\use_amsmath 2
+\use_esint 2
+\use_mhchem 1
+\use_mathdots 1
 \cite_engine basic
-\cite_engine_type default
-\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
 \suppress_date false
-\justification true
 \use_refstyle 0
 \branch GroupVersion
 \selected 1

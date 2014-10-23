@@ -48,6 +48,7 @@
 \newif\ifustc@adobefont\ustc@adobefontfalse
 \DeclareOption{master}{\ustc@mastertrue}
 \DeclareOption{doctor}{\ustc@doctortrue}
+\DeclareOption{adobefont}{\ustc@adobefonttrue}
 
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{ctexbook}}
 \ProcessOptions
