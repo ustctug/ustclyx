@@ -1,33 +1,32 @@
-#LyX 2.1 created this file. For more info see http://www.lyx.org/
-\lyxformat 474
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
 \begin_document
 \begin_header
 \textclass USTCthesis
 \begin_preamble
 %Created by jmcui 
 %\graphicspath{{C:/Users/jmcui/Desktop/Lyxthesis/USTCthesis}}
-
-\usepackage{bibentry,natbib}
 \end_preamble
-\options doctor,twoside
+\options doctor,twoside,adobefont
 \use_default_options false
 \master ../Main.lyx
+\begin_modules
+theorems-ams
+\end_modules
 \maintain_unincluded_children false
 \begin_local_layout
-NoStyle	Chapter
-NoStyle	Chapter*
 NoStyle	Thanks
+NoStyle	ChapterSpecial
 NoStyle	Abstract
 NoStyle	EnglishAbstract
 \end_local_layout
 \language chinese-simplified
 \language_package babel
-\inputencoding gbk
+\inputencoding GBK
 \fontencoding global
 \font_roman default
 \font_sans default
 \font_typewriter default
-\font_math auto
 \font_default_family default
 \use_non_tex_fonts true
 \font_sc false
@@ -35,6 +34,7 @@ NoStyle	EnglishAbstract
 \font_sf_scale 100
 \font_tt_scale 100
 \font_cjk fs
+
 \graphics default
 \default_output_format pdf4
 \output_sync 0
@@ -54,24 +54,15 @@ NoStyle	EnglishAbstract
 \pdf_pdfusetitle false
 \papersize default
 \use_geometry false
-\use_package amsmath 2
-\use_package amssymb 2
-\use_package cancel 1
-\use_package esint 2
-\use_package mathdots 1
-\use_package mathtools 1
-\use_package mhchem 1
-\use_package stackrel 1
-\use_package stmaryrd 1
-\use_package undertilde 1
+\use_amsmath 2
+\use_esint 2
+\use_mhchem 1
+\use_mathdots 1
 \cite_engine basic
-\cite_engine_type default
-\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
 \suppress_date false
-\justification true
 \use_refstyle 0
 \index 索引
 \shortcut idx
@@ -94,92 +85,65 @@ NoStyle	EnglishAbstract
 
 \begin_body
 
-\begin_layout ChapterSpecial
-在读期间发表的学术论文与取得的研究成果
+\begin_layout Chapter
+\start_of_appendix
+修改记录
+\end_layout
+
+\begin_layout Itemize
+3/11-2014 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+修改封面布局、细节
+\end_layout
+
+\begin_layout Itemize
+解决标题需要两行书写的问题，但是书脊的标题需要单独在
+\backslash
+makebookspline中给出（最好用命令直接将标题中的回车删除，需要下一步改进）
+\end_layout
+
+\begin_layout Itemize
+超链接显示为蓝色（打印仍然是黑色） 
+\end_layout
+
+\begin_layout Itemize
+添加listings包
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+12/28-2012 修正字体选项，出现字体问题时下载Adobefont 安装即可
+\end_layout
+
+\begin_layout Itemize
+04/11-2012 修正最初版本的一些bug；去掉模板中冗余的些命令；整理使用技巧一章
+\end_layout
+
+\begin_layout Chapter
+存在问题
 \end_layout
 
 \begin_layout Standard
-\noindent
-
-\series bold
-研究工作:
-\end_layout
-
-\begin_layout Enumerate
-work
-\end_layout
-
-\begin_layout Enumerate
-work hard
-\end_layout
-
-\begin_layout Enumerate
-work hell
+由于本人精力有限，现在的模板bug还很多，希望有兴趣者积极参改进工作。可以给我发信说明一下索取SVN上传密码：jmcui@mail.ustc.edu.cn
 \end_layout
 
 \begin_layout Standard
-\noindent
-
-\series bold
-已发表论文:
+目前主要待改进的问题有，这些需要修改cls模板文件实现：
 \end_layout
 
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-nobibliography*
+\begin_layout Itemize
+章节标题之间的距离还不符合要求，需要细调
 \end_layout
 
-\end_inset
-
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-使用bibentry包, 直接导入文献
+\begin_layout Itemize
+页眉标题与页眉横线的距离需要细调
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-bibentry{faraon2010resonant}
-\end_layout
-
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-bibentry{fu2008coupling}
-\end_layout
-
-\end_inset
-
-
+\begin_layout Itemize
+封面的密级没有设置
 \end_layout
 
 \end_body

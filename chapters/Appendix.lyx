@@ -1,5 +1,5 @@
-#LyX 2.0 created this file. For more info see http://www.lyx.org/
-\lyxformat 413
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
 \begin_document
 \begin_header
 \textclass USTCthesis
@@ -7,7 +7,7 @@
 %Created by jmcui 
 %\graphicspath{{C:/Users/jmcui/Desktop/Lyxthesis/USTCthesis}}
 \end_preamble
-\options doctor,twoside,adobefont
+\options doctor,twoside
 \use_default_options false
 \master ../Main.lyx
 \begin_modules
@@ -22,11 +22,12 @@ NoStyle	EnglishAbstract
 \end_local_layout
 \language chinese-simplified
 \language_package babel
-\inputencoding GBK
+\inputencoding gbk
 \fontencoding global
 \font_roman default
 \font_sans default
 \font_typewriter default
+\font_math auto
 \font_default_family default
 \use_non_tex_fonts true
 \font_sc false
@@ -34,7 +35,6 @@ NoStyle	EnglishAbstract
 \font_sf_scale 100
 \font_tt_scale 100
 \font_cjk fs
-
 \graphics default
 \default_output_format pdf4
 \output_sync 0
@@ -54,15 +54,24 @@ NoStyle	EnglishAbstract
 \pdf_pdfusetitle false
 \papersize default
 \use_geometry false
-\use_amsmath 2
-\use_esint 2
-\use_mhchem 1
-\use_mathdots 1
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 1
+\use_package esint 2
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
 \cite_engine basic
+\cite_engine_type default
+\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
 \suppress_date false
+\justification true
 \use_refstyle 0
 \index 索引
 \shortcut idx

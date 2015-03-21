@@ -1,4 +1,4 @@
-﻿
+
 % Ref 1:
 % \begin{verbatim}
 % 参考科学出版社编写的《著译编辑手册》(1994年)
@@ -45,10 +45,8 @@
 
 \newif\ifustc@master\ustc@masterfalse
 \newif\ifustc@doctor\ustc@doctorfalse
-\newif\ifustc@adobefont\ustc@adobefontfalse
 \DeclareOption{master}{\ustc@mastertrue}
 \DeclareOption{doctor}{\ustc@doctortrue}
-\DeclareOption{adobefont}{\ustc@adobefonttrue}
 
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{ctexbook}}
 \ProcessOptions
@@ -64,34 +62,6 @@
 {You have to specify one of thesis options: master or doctor.}{}
 \fi
 \fi
-
-\ifustc@adobefont
-	\setCJKmainfont[BoldFont={Adobe Heiti Std}, ItalicFont={Adobe Kaiti Std}]{Adobe Song Std}
-	\setCJKsansfont{Adobe Heiti Std}
-	\setCJKmonofont{Adobe Fangsong Std}
-
-	\setCJKfamilyfont{song}{Adobe Song Std}
-	\setCJKfamilyfont{hei}{Adobe Heiti Std}
-	\setCJKfamilyfont{kai}{Adobe Kaiti Std}
-	\setCJKfamilyfont{fs}{Adobe Fangsong Std}
-	\setCJKfamilyfont{verthei}[RawFeature={vertical:}]{Adobe Heiti Std}%{Adobe Heiti Std} 这里还是改成Adobe Heiti Std吧，在Linux下面SimHei貌似不行，改成这个就好了
-\else
-	\setCJKmainfont[BoldFont={SimHei}, ItalicFont={KaiTi}]{NSimSun}
-	\setCJKsansfont{SimHei}
-	\setCJKmonofont{FangSong}
-
-	\setCJKfamilyfont{song}{NSimSun}
-	\setCJKfamilyfont{hei}{SimHei}
-	\setCJKfamilyfont{kai}{KaiTi}   % XP对应 KaiTi_GB2312，Vista对应KaiTi，注意根据系统切换
-	\setCJKfamilyfont{fs}{FangSong} % XP对应 FangSong_GB2312，Vista对应FangSong，注意根据系统切换
-	\setCJKfamilyfont{verthei}[RawFeature={vertical:}]{SimHei}%{Adobe Heiti Std}
-\fi
-
-\newcommand{\song}{\CJKfamily{song}}    % 宋体
-\newcommand{\fs}{\CJKfamily{fs}}        % 仿宋体
-\newcommand{\kai}{\CJKfamily{kai}}      % 楷体
-\newcommand{\hei}{\CJKfamily{hei}}      % 黑体
-\newcommand{\verthei}{\CJKfamily{verthei}}
 
 \setmainfont{Times New Roman}
 \setsansfont[BoldFont={Arial:style=Bold}]{Arial}
@@ -355,7 +325,7 @@
         \thispagestyle{empty}
     \begin{center}
     \rotatebox{-90}{
-        \framebox[0.97\textheight][c]{\ziju{0.17}\verthei\zihao{-4}
+        \framebox[0.97\textheight][c]{\ziju{0.17}\zihao{-4}
         \raisebox{10pt}{
             {#1}
             \hspace*{20pt}  \ustc@depart \hspace*{20pt}
