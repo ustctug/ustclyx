@@ -225,7 +225,7 @@ status open
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
-filename "chapters/介绍.lyx"
+filename "chapters/Introduction.lyx"
 
 \end_inset
 
@@ -235,7 +235,7 @@ filename "chapters/介绍.lyx"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
-filename "chapters/技巧.lyx"
+filename "chapters/Skills.lyx"
 
 \end_inset
 
@@ -320,7 +320,7 @@ filename "chapters/thanks.lyx"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
-filename "chapters/发表成果.lyx"
+filename "chapters/Publication.lyx"
 
 \end_inset
 
