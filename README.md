@@ -3,7 +3,7 @@ USTC-Lyx
 
 Lyx template for USTC  thesis 
 
-= 中国科学技术大学博士论文Lyx模板 =
+# 中国科学技术大学博士论文Lyx模板 #
 
 
 目的
