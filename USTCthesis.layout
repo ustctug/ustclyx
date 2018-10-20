@@ -1,5 +1,5 @@
 ﻿#% Do not delete the line below; configure depends on this
-#  \DeclareLaTeXClass[USTCthesis]{USTC Thesis Lyx Template}
+#  \DeclareLaTeXClass[ustcthesis]{USTC Thesis Lyx Template}
 # Author : Cui Jinming <jmcui@mail.ustc.edu.cn>
 
 
@@ -120,7 +120,7 @@ End
 
 Style EnglishAbstract
 CopyStyle 		Abstract 
-LatexName             eabstract
+LatexName             enabstract
 LabelString           "　Abstract"
 End
 
@@ -154,3 +154,4 @@ NoStyle Title
 NoStyle Date
 NoStyle Address
 NoStyle Right_Address
+NoStyle Cover

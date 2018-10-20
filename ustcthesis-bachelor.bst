@@ -1,0 +1,1 @@
+./ustcthesis/ustcthesis-bachelor.bst

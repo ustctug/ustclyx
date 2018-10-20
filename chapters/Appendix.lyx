@@ -1,7 +1,9 @@
-#LyX 2.1 created this file. For more info see http://www.lyx.org/
-\lyxformat 474
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
 \begin_document
 \begin_header
+\save_transient_properties true
+\origin unavailable
 \textclass USTCthesis
 \begin_preamble
 %Created by jmcui 
@@ -24,17 +26,19 @@ NoStyle	EnglishAbstract
 \language_package babel
 \inputencoding gbk
 \fontencoding global
-\font_roman default
-\font_sans default
-\font_typewriter default
-\font_math auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
 \font_default_family default
 \use_non_tex_fonts true
 \font_sc false
 \font_osf false
-\font_sf_scale 100
-\font_tt_scale 100
+\font_sf_scale 100 100
+\font_tt_scale 100 100
 \font_cjk fs
+\use_microtype false
+\use_dash_ligatures true
 \graphics default
 \default_output_format pdf4
 \output_sync 0
@@ -73,6 +77,7 @@ NoStyle	EnglishAbstract
 \suppress_date false
 \justification true
 \use_refstyle 0
+\use_minted 0
 \index 索引
 \shortcut idx
 \color #008000
@@ -81,7 +86,10 @@ NoStyle	EnglishAbstract
 \tocdepth 3
 \paragraph_separation indent
 \paragraph_indentation default
-\quotes_language english
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
 \papercolumns 1
 \papersides 2
 \paperpagestyle default
@@ -100,7 +108,21 @@ NoStyle	EnglishAbstract
 \end_layout
 
 \begin_layout Itemize
+10/20-2018
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+修改底层latex模版，使用ustcthesis模版。博士，硕士，学士模版通用了。
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
 3/11-2014 
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -135,24 +157,12 @@ makebookspline中给出（最好用命令直接将标题中的回车删除，需
 存在问题
 \end_layout
 
-\begin_layout Standard
-由于本人精力有限，现在的模板bug还很多，希望有兴趣者积极参改进工作。可以给我发信说明一下索取SVN上传密码：jmcui@mail.ustc.edu.cn
-\end_layout
-
-\begin_layout Standard
-目前主要待改进的问题有，这些需要修改cls模板文件实现：
+\begin_layout Itemize
+ustctthesis中listing没有设置，后续需要更新ustcthesis模版
 \end_layout
 
 \begin_layout Itemize
-章节标题之间的距离还不符合要求，需要细调
-\end_layout
-
-\begin_layout Itemize
-页眉标题与页眉横线的距离需要细调
-\end_layout
-
-\begin_layout Itemize
-封面的密级没有设置
+编译时，href包报错。应该是href包load了两次。继续输出可以编译出内容，这个问题影响倒是不大。
 \end_layout
 
 \end_body

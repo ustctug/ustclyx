@@ -1,23 +1,44 @@
-#LyX 2.1 created this file. For more info see http://www.lyx.org/
-\lyxformat 474
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
 \begin_document
 \begin_header
+\save_transient_properties true
+\origin unavailable
 \textclass USTCthesis
 \begin_preamble
 % Lyx template for USTC doctor/master thesis
 % Created by jmcui 6-23-2011 @USTC
-% use USTCthesis class: http://code.google.com/p/ustcthesis
- 
-\usepackage{bibentry}
+% use USTCthesis class: https://github.com/jmcui/USTC-Lyx
 
-\hypersetup
-{   
-    pdftitle={A USTCer's Thesis},
-    pdfauthor={A USTCer},
-    pdfsubject={Thesis,USTC,University of Science and Technology of China}
-}
+% 模版参数， 在文档类里设置，不能在本导言区设置。这里仅仅列出参数，供参考
+% doctor|master|bachelor [academic|professional] [chinese|english] [print|pdf]
+% [super|numebers|authoryear]
+
+\title{中国科学技术大学\\学位论文模板示例文档}
+\author{李泽平}
+\major{数学与应用数学}
+\supervisor{华罗庚\ 教授}
+\cosupervisor{钱学森\ 教授}
+% \date{二〇一七年五月一日} % 注释掉则为今日
+% \professionaltype{专业学位类型}
+% \secretlevel{秘密}        % 绝密|机密|秘密，注释本行则不保密
+% \secretyear{20}           % 保密年限
+
+\entitle{An example of thesis template for University of Science and Technology
+  of China}
+\enauthor{Zeping Li}
+\enmajor{Mathematics and Applied Mathematics}
+\ensupervisor{Prof. Luogeng Hua}
+\encosupervisor{Prof. Xuesen Qian}
+% \endate{May 1, 2017}      % Today if commented
+% \enprofessionaltype{Professional degree type}
+% \ensecretlevel{Secret}    % Top secret|Highly secret|Secret
+
+
+%
+\usepackage{bibentry,natbib}
 \end_preamble
-\options doctor,adobefont,twoside
+\options doctor
 \use_default_options false
 \begin_modules
 theorems-ams
@@ -27,17 +48,19 @@ theorems-ams
 \language_package babel
 \inputencoding gbk
 \fontencoding global
-\font_roman default
-\font_sans default
-\font_typewriter default
-\font_math auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
 \font_default_family default
 \use_non_tex_fonts true
 \font_sc false
 \font_osf false
-\font_sf_scale 100
-\font_tt_scale 100
+\font_sf_scale 100 100
+\font_tt_scale 100 100
 \font_cjk gbsn
+\use_microtype false
+\use_dash_ligatures true
 \graphics default
 \default_output_format pdf4
 \output_sync 0
@@ -45,11 +68,8 @@ theorems-ams
 \index_command default
 \paperfontsize default
 \spacing single
-\use_hyperref false
-\pdf_title "USTCthesis Template"
-\pdf_author "jmcui"
-\pdf_subject "Thesis"
-\pdf_bookmarks true
+\use_hyperref true
+\pdf_bookmarks false
 \pdf_bookmarksnumbered false
 \pdf_bookmarksopen false
 \pdf_bookmarksopenlevel 1
@@ -58,16 +78,16 @@ theorems-ams
 \pdf_colorlinks false
 \pdf_backref false
 \pdf_pdfusetitle false
-\pdf_quoted_options "CJKbookmarks=true,bookmarksnumbered=true,bookmarksopen=true,breaklinks=true,colorlinks=true,linkcolor=black,citecolor=black,plainpages=false,pdfstartview=FitH"
+\pdf_quoted_options "xetex,unicode=true"
 \papersize default
 \use_geometry false
-\use_package amsmath 2
-\use_package amssymb 2
+\use_package amsmath 0
+\use_package amssymb 0
 \use_package cancel 0
-\use_package esint 2
-\use_package mathdots 1
+\use_package esint 0
+\use_package mathdots 0
 \use_package mathtools 0
-\use_package mhchem 1
+\use_package mhchem 0
 \use_package stackrel 0
 \use_package stmaryrd 0
 \use_package undertilde 0
@@ -80,6 +100,7 @@ theorems-ams
 \suppress_date false
 \justification true
 \use_refstyle 0
+\use_minted 0
 \branch GroupVersion
 \selected 1
 \filename_suffix 0
@@ -93,7 +114,10 @@ theorems-ams
 \tocdepth 2
 \paragraph_separation indent
 \paragraph_indentation default
-\quotes_language english
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
 \papercolumns 1
 \papersides 2
 \paperpagestyle default
@@ -115,7 +139,7 @@ Main 文档
 \end_layout
 
 \begin_layout Enumerate
-整体结构，导航。同目录下USTCthesis.layout 为Lyx的 布局文件（或称为layout 文件）。注意使用 文档\SpecialChar \menuseparator
+整体结构，导航。同目录下USTCthesis.layout 为Lyx的 布局文件（或称为layout 文件）。注意使用 文档\SpecialChar menuseparator
 目录 或者 导航菜单
  切换章节。
 \end_layout
@@ -146,17 +170,13 @@ status open
 \end_layout
 
 \begin_layout Enumerate
-Cover.lyx实现中文封面、英文封面、书脊、授权页的生成，只需要编者填写参数即可
-\begin_inset Newline newline
-\end_inset
+封面设置，在主文档Main.lyx的导言区设置：
+\end_layout
 
-Cover.lyx 文档\SpecialChar \menuseparator
-首选项\SpecialChar \menuseparator
-本地布局 中定义 一些格式（标题，作者，院系等), 
-\begin_inset Newline newline
-\end_inset
-
-由于是本地布局，这些格式对其他子文档是不可见的。
+\begin_layout Plain Layout
+文档\SpecialChar menuseparator
+首选项\SpecialChar menuseparator
+latex导言区
 \end_layout
 
 \end_inset
@@ -165,9 +185,22 @@ Cover.lyx 文档\SpecialChar \menuseparator
 \end_layout
 
 \begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand include
-filename "./chapters/Cover.lyx"
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+maketitle 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+makestatement
+\end_layout
 
 \end_inset
 
@@ -183,11 +216,11 @@ status open
 \end_layout
 
 \begin_layout Enumerate
-实现：摘要，目录，图像、表格、算法列表
+摘要，目录，图像、表格、算法列表
 \end_layout
 
 \begin_layout Enumerate
-FrontMatter.lyx实现前言，摘要，目录，图像、表格、算法列表。可进入此文件编辑，不需要生成部分的去掉对应的命令即可
+FrontMatter.lyx文件。可进入此文件编辑，把不需要的部注释掉。或者参考例子添加内容。
 \end_layout
 
 \end_inset
@@ -258,8 +291,9 @@ status open
 \begin_layout Standard
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
+btprint "btPrintCited"
 bibfiles "Ref"
-options "ustcbib"
+options "ustcthesis/ustcthesis-numerical"
 
 \end_inset
 

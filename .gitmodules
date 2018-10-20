@@ -1,0 +1,3 @@
+[submodule "ustcthesis"]
+	path = ustcthesis
+	url = https://github.com/ustctug/ustcthesis

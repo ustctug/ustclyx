@@ -1,7 +1,9 @@
-#LyX 2.1 created this file. For more info see http://www.lyx.org/
-\lyxformat 474
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
 \begin_document
 \begin_header
+\save_transient_properties true
+\origin unavailable
 \textclass USTCthesis
 \begin_preamble
 %Created by jmcui 
@@ -24,17 +26,19 @@ NoStyle	EnglishAbstract
 \language_package babel
 \inputencoding gbk
 \fontencoding global
-\font_roman default
-\font_sans default
-\font_typewriter default
-\font_math auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
 \font_default_family default
 \use_non_tex_fonts true
 \font_sc false
 \font_osf false
-\font_sf_scale 100
-\font_tt_scale 100
+\font_sf_scale 100 100
+\font_tt_scale 100 100
 \font_cjk fs
+\use_microtype false
+\use_dash_ligatures true
 \graphics default
 \default_output_format pdf4
 \output_sync 0
@@ -54,16 +58,16 @@ NoStyle	EnglishAbstract
 \pdf_pdfusetitle false
 \papersize default
 \use_geometry false
-\use_package amsmath 2
-\use_package amssymb 2
-\use_package cancel 1
-\use_package esint 2
-\use_package mathdots 1
-\use_package mathtools 1
-\use_package mhchem 1
-\use_package stackrel 1
-\use_package stmaryrd 1
-\use_package undertilde 1
+\use_package amsmath 0
+\use_package amssymb 0
+\use_package cancel 0
+\use_package esint 0
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
 \cite_engine basic
 \cite_engine_type default
 \biblio_style plain
@@ -73,6 +77,7 @@ NoStyle	EnglishAbstract
 \suppress_date false
 \justification true
 \use_refstyle 0
+\use_minted 0
 \index 索引
 \shortcut idx
 \color #008000
@@ -81,7 +86,10 @@ NoStyle	EnglishAbstract
 \tocdepth 3
 \paragraph_separation indent
 \paragraph_indentation default
-\quotes_language english
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
 \papercolumns 1
 \papersides 2
 \paperpagestyle default
@@ -96,11 +104,19 @@ NoStyle	EnglishAbstract
 
 \begin_layout Chapter
 使用技巧
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:使用技巧"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 \align center
-建议你阅读完本章，尤其是LyX的新用户
+建议你阅读完本章，尤其是\SpecialChar LyX
+的新用户
 \end_layout
 
 \begin_layout Section
@@ -108,7 +124,8 @@ NoStyle	EnglishAbstract
 \end_layout
 
 \begin_layout Standard
-LyX的帮助文档比较全面，有问题的时候要先到此处来寻找，新用户可以几分钟看一下入门教程，上手是非常快的。
+\SpecialChar LyX
+的帮助文档比较全面，有问题的时候要先到此处来寻找，新用户可以几分钟看一下入门教程，上手是非常快的。
 \end_layout
 
 \begin_layout Section
@@ -135,6 +152,11 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -263,7 +285,14 @@ USTC Elements
 \end_layout
 
 \begin_layout Section
-include 文件
+新建Lyx文件
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:新建Lyx文件"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -279,8 +308,8 @@ include 文件
 \end_layout
 
 \begin_layout Standard
-与Tex类似，Lyx可以将一个大文件分割成几个小文件，然后通过include的方法整合到一块编译。具体操作：插入\SpecialChar \menuseparator
-文件\SpecialChar \menuseparator
+与Tex类似，Lyx可以将一个大文件分割成几个小文件，然后通过include的方法整合到一块编译。具体操作：插入\SpecialChar menuseparator
+文件\SpecialChar menuseparator
 子文档。使用包含命令的文件为主文档，被包含的
 文件为子文档，子文档是.lyx也可以包含tex文件。
 \end_layout
@@ -294,14 +323,127 @@ end{document}之间的文档内容，然后将之包进主文档 (如果导言�
 \end_layout
 
 \begin_layout Standard
-如果include文件是.lyx文件，可以在文档\SpecialChar \menuseparator
-首选项\SpecialChar \menuseparator
+如果include文件是.lyx文件，可以在文档\SpecialChar menuseparator
+首选项\SpecialChar menuseparator
 文档类 中设置主文档。设置主文档优点是子文档的导航是按主文档中的所有章节进行导航，而不是按照子文档中本章节进
 行导航。使用导航功能便于在文件和章节中切换。由于模板中子文档都已经设置为Main.lyx为主文档，所以通过复制的方法新建章节文件时，选项就不需要设置了。
 \end_layout
 
 \begin_layout Standard
 使用章节文件的优势是你在这个章节文件里直接编译查看，此时编译就只对本章进行，可以节省大量的编译时间。而编译整篇论文只需要在Main文档中编译查看即可。
+\end_layout
+
+\begin_layout Section
+常见问题
+\end_layout
+
+\begin_layout Subsection
+语言问题
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:语言问题"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+如果从直接从其他Lyx文件直接copy内容，粘贴导论文中，有可能会出现语言冲突的问题。出现这个问题后，Lyx 会在文字下面标注下滑线，看起来像修订模式的标注一样
+。这是因为copy过来的文字内容，设置的是英文语言，而本模版语言为简体中文。可以通过如下操作解决：
+\end_layout
+
+\begin_layout Standard
+选中有问题的文字，鼠标右键调出属性菜单，语言，选中文。
+\end_layout
+
+\begin_layout Section
+tex转换为lyx
+\end_layout
+
+\begin_layout Standard
+使用winedit编写的tex文件，默认是GBK编码的。可以使用lyx自带的tex2lyx.exe程序转换.假设lyx安装在D盘，需要转换chap3.tex这个文件，
+在cmd先切换到lyx/bin文件夹下：
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+D:
+\end_layout
+
+\begin_layout Plain Layout
+
+cd D:
+\backslash
+Program Files (x86)
+\backslash
+LyX 2.2
+\backslash
+bin
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+然后运行转换命令
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+D:
+\backslash
+Program Files (x86)
+\backslash
+LyX 2.2
+\backslash
+bin>tex2lyx.exe  chap3.tex -e  GBK
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+如果是utf8编码的文件，-e 后的参数改为utf8。注意生成的lyx文件不能直接使用，因为这个文件没有设置模板。需要从这个文件中将内容拷贝出来，粘贴到设置好模
+板的lyx文件中。新建lyx文件参考
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:新建Lyx文件"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+。会遇到语言问题，参考
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:语言问题"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+。
 \end_layout
 
 \begin_layout Section
@@ -348,8 +490,8 @@ cdot
 \end_layout
 
 \begin_layout Standard
-论文模板中并没有提供各种定理环境，因为通过在文档中插入模块来实现所需的定理环。在 文档\SpecialChar \menuseparator
-首选项\SpecialChar \menuseparator
+论文模板中并没有提供各种定理环境，因为通过在文档中插入模块来实现所需的定理环。在 文档\SpecialChar menuseparator
+首选项\SpecialChar menuseparator
 模块 中可以根据需要载入具体格式的模块。 本章文档加入了AMS的Th
 eorem普通模块，在格式下拉菜单下可以看到添加了很多定理格式。书写一条语句用定理格式化，如下
 \end_layout
@@ -374,12 +516,13 @@ name "thm:algebra"
 \end_layout
 
 \begin_layout Standard
-光标放到需要标记的环境或者文本中，然后选择 插入\SpecialChar \menuseparator
-标签， 最后设置标签的名字。也可以直接使用工具栏上的插入标签工具。LyX会很聪明的给标签一个默认名字，这个名字包
-含前缀（冒号前的内容）和名字。你可以自由的修改标签的名字，建议前缀不要修改，因为前缀会与后面的格式化引用有关，具体看
+光标放到需要标记的环境或者文本中，然后选择 插入\SpecialChar menuseparator
+标签， 最后设置标签的名字。也可以直接使用工具栏上的插入标签工具。\SpecialChar LyX
+会很聪明的给标签一个默认名字，这个名字包含前缀
+（冒号前的内容）和名字。你可以自由的修改标签的名字，建议前缀不要修改，因为前缀会与后面的格式化引用有关，具体看
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "sub:引用标签"
+reference "subsec:引用标签"
 
 \end_inset
 
@@ -398,6 +541,11 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -417,7 +565,7 @@ status open
 引用标签
 \begin_inset CommandInset label
 LatexCommand label
-name "sub:引用标签"
+name "subsec:引用标签"
 
 \end_inset
 
@@ -425,7 +573,7 @@ name "sub:引用标签"
 \end_layout
 
 \begin_layout Standard
-光标放到需要标记的环境或者文本中，然后选择 插入\SpecialChar \menuseparator
+光标放到需要标记的环境或者文本中，然后选择 插入\SpecialChar menuseparator
 交叉引用， 选择引用的标签。也可以直接使用工具栏上的插入交叉引用工具。注意有多种引用方式可以选择的，右键点击交叉
 引用的对象可以看到几种引用的对象：
 \end_layout
@@ -463,9 +611,10 @@ Textual
 \backslash
 prettyref的命令或者
 \backslash
-##ref，这取决与你在LyX 文档首选项\SpecialChar \menuseparator
-文档类 中选择使用prettyref还是refstyle。熟悉Tex的同学明白怎么回事了。建议使用默认的prettyr
-ef，你可以直接在Lyx中修改引用的格式，插入tex几条命令即可。举例如下，冒号后是引用格式的效果
+##ref，这取决与你在\SpecialChar LyX
+ 文档首选项\SpecialChar menuseparator
+文档类 中选择使用prettyref还是refstyle。熟悉Tex的同学明白怎么回事了。建议使用默认的prettyref，
+你可以直接在Lyx中修改引用的格式，插入tex几条命令即可。举例如下，冒号后是引用格式的效果
 \end_layout
 
 \begin_layout Itemize
@@ -612,8 +761,8 @@ reference "fig:USTC-Elements"
 \end_layout
 
 \begin_layout Standard
-参考文献用Bibtex实现（插入\SpecialChar \menuseparator
-目录/列表\SpecialChar \menuseparator
+参考文献用Bibtex实现（插入\SpecialChar menuseparator
+目录/列表\SpecialChar menuseparator
 Bibtex引用），已经放置在在Main文档中，这样其他子文当可以使用文献引工具引用里面的条目。添加文献只需要在Ref.
 bib中添加条目，然后在文中引用即可。可以使用Jabref直接编辑bib文件
 \begin_inset Flex URL
@@ -626,9 +775,9 @@ http://jabref.sourceforge.net/
 
 \end_inset
 
-。可以通过工具\SpecialChar \menuseparator
-首选项\SpecialChar \menuseparator
-File Handing\SpecialChar \menuseparator
+。可以通过工具\SpecialChar menuseparator
+首选项\SpecialChar menuseparator
+File Handing\SpecialChar menuseparator
 File Formats 来设置对应文件的编辑器。
 \end_layout
 
@@ -637,6 +786,7 @@ File Formats 来设置对应文件的编辑器。
 \begin_inset CommandInset citation
 LatexCommand cite
 key "faraon2010resonant"
+literal "true"
 
 \end_inset
 
@@ -648,7 +798,7 @@ key "faraon2010resonant"
 \end_layout
 
 \begin_layout Standard
-要实现C、Matlab等语言语法高亮显示，在Latex中可以使用listings包。相应的在Lyx中可以用以下方式插入： 插入\SpecialChar \menuseparator
+要实现C、Matlab等语言语法高亮显示，在Latex中可以使用listings包。相应的在Lyx中可以用以下方式插入： 插入\SpecialChar menuseparator
 Program Listing。在
 输入框内写入代码后，右键设置Listing的属性即可（右键Settings）。
 \end_layout
@@ -833,19 +983,19 @@ up分支。激活或者关闭Group分支，编译就会得到小组内部版本�
 \end_layout
 
 \begin_layout Itemize
-首先建立分支：在Main.lyx中 文档\SpecialChar \menuseparator
-首选项\SpecialChar \menuseparator
+首先建立分支：在Main.lyx中 文档\SpecialChar menuseparator
+首选项\SpecialChar menuseparator
 分支 ，新建即可
 \end_layout
 
 \begin_layout Itemize
-插入分支：插入\SpecialChar \menuseparator
+插入分支：插入\SpecialChar menuseparator
 分支 选择具体分支即可
 \end_layout
 
 \begin_layout Itemize
-激活或者关闭分支：在Main.lyx中 文档\SpecialChar \menuseparator
-首选项\SpecialChar \menuseparator
+激活或者关闭分支：在Main.lyx中 文档\SpecialChar menuseparator
+首选项\SpecialChar menuseparator
 分支 ，双击对应分支对应选项处即可切换。
 \end_layout
 
@@ -856,6 +1006,7 @@ up分支。激活或者关闭Group分支，编译就会得到小组内部版本�
 \begin_layout Standard
 以下红色文字需要激活GroupVersion分支才可见：
 \begin_inset Branch GroupVersion
+inverted 0
 status open
 
 \begin_layout Standard
@@ -885,6 +1036,10 @@ PDF meta属性需要在在Main.lyx中的导言区设定，默认的属性如下�
 
 \backslash
 hypersetup {        
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -910,15 +1065,16 @@ pdfsubject={Thesis,USTC,University of Science and Technology of China}
 \end_layout
 
 \begin_layout Standard
-可以通过工具\SpecialChar \menuseparator
-首选项\SpecialChar \menuseparator
-File Handing\SpecialChar \menuseparator
+可以通过工具\SpecialChar menuseparator
+首选项\SpecialChar menuseparator
+File Handing\SpecialChar menuseparator
 File Formats 来设置相应图片格式的编辑器。这样对图片右键，选择Edit Externally即可用编辑器编
 辑。
 \end_layout
 
 \begin_layout Standard
-如果已经安装了Inkscape，矢量图格式svg文件就可以直接在LyX中使用。 
+如果已经安装了Inkscape，矢量图格式svg文件就可以直接在\SpecialChar LyX
+中使用。 
 \end_layout
 
 \begin_layout Subsection
@@ -926,9 +1082,9 @@ File Formats 来设置相应图片格式的编辑器。这样对图片右键，�
 \end_layout
 
 \begin_layout Standard
-工具\SpecialChar \menuseparator
-首选项\SpecialChar \menuseparator
-外观\SpecialChar \menuseparator
+工具\SpecialChar menuseparator
+首选项\SpecialChar menuseparator
+外观\SpecialChar menuseparator
 显示 即时预览 选择打开。 可以查看一些latex中复杂的公式，例如费曼图、XY-pic、树形图等。即时预览是通过预编译实现的，所以显示速度会有些
 慢。
 \end_layout
