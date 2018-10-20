@@ -3,13 +3,13 @@ USTC-Lyx
 
 Lyx template for USTC  thesis 
 
-# 中国科学技术大学学问论文Lyx模板 #
+# 中国科学技术大学学位论文Lyx模板 #
 
 
 ## 目的 ##
 
 
-用Lyx实现xetex的中国科学技术大学论文模板，方便USTCer编辑学位论文。
+中国科学技术大学学位论文Lyx模板，方便USTCer编辑学位论文。
 
 ## 下载 ##
 
