@@ -490,10 +490,10 @@ cdot
 \end_layout
 
 \begin_layout Standard
-论文模板中并没有提供各种定理环境，因为通过在文档中插入模块来实现所需的定理环。在 文档\SpecialChar menuseparator
+论文模板中并没有提供各种定理环境，可以在文档中插入模块来实现所需的定理环境。在 文档\SpecialChar menuseparator
 首选项\SpecialChar menuseparator
-模块 中可以根据需要载入具体格式的模块。 本章文档加入了AMS的Th
-eorem普通模块，在格式下拉菜单下可以看到添加了很多定理格式。书写一条语句用定理格式化，如下
+模块 中根据需要载入模块。 例如，在本章文档中已经加入了AMS的The
+orem普通模块，在格式下拉菜单下可以看到添加了很多定理格式。书写一条语句用定理格式化，如下
 \end_layout
 
 \begin_layout Theorem
@@ -517,8 +517,8 @@ name "thm:algebra"
 
 \begin_layout Standard
 光标放到需要标记的环境或者文本中，然后选择 插入\SpecialChar menuseparator
-标签， 最后设置标签的名字。也可以直接使用工具栏上的插入标签工具。\SpecialChar LyX
-会很聪明的给标签一个默认名字，这个名字包含前缀
+标签， 最后设置标签的名字。也可以使用工具栏上‘标签’图标的插入标签工具。\SpecialChar LyX
+会给标签一个默认名字，这个名字包含前缀
 （冒号前的内容）和名字。你可以自由的修改标签的名字，建议前缀不要修改，因为前缀会与后面的格式化引用有关，具体看
 \begin_inset CommandInset ref
 LatexCommand formatted
