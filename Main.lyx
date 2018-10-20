@@ -37,6 +37,34 @@
 
 %
 \usepackage{bibentry,natbib}
+
+%%图、表的格式化引用
+\newrefformat{fig}{\hyperref[#1]{图\ref*{#1}\,}}
+\newrefformat{eq}{\hyperref[#1]{式\ref*{#1}\,}}
+\newrefformat{tab}{\hyperref[#1]{表\ref*{#1}\,}}
+
+%%listings设置
+\usepackage{listings}
+\usepackage{xcolor}
+\lstset{
+  tabsize=4, %
+  frame=shadowbox, %把代码用带有阴影的框圈起来
+  commentstyle=\color{red!50!green!50!blue!50},%浅灰色的注释
+  rulesepcolor=\color{red!20!green!20!blue!20},%代码块边框为淡青色
+  keywordstyle=\color{blue!90}\bfseries, %代码关键字的颜色为蓝色，粗体
+  showstringspaces=false,%不显示代码字符串中间的空格标记
+  stringstyle=\ttfamily, % 代码字符串的特殊格式
+  keepspaces=true, %
+  breakindent=22pt, %
+  basicstyle=\footnotesize, %
+  showspaces=false, %
+  flexiblecolumns=true, %
+  breaklines=true,%对过长的代码自动换行
+  breakautoindent=true,%
+  breakindent=4em,%
+  texcl=true,
+  aboveskip=1em %代码块边框
+}
 \end_preamble
 \options doctor
 \use_default_options false
@@ -68,7 +96,7 @@ theorems-ams
 \index_command default
 \paperfontsize default
 \spacing single
-\use_hyperref true
+\use_hyperref false
 \pdf_bookmarks false
 \pdf_bookmarksnumbered false
 \pdf_bookmarksopen false
@@ -186,7 +214,7 @@ latex导言区
 
 \begin_layout Standard
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -293,7 +321,6 @@ status open
 LatexCommand bibtex
 btprint "btPrintCited"
 bibfiles "Ref"
-options "ustcthesis/ustcthesis-numerical"
 
 \end_inset
 

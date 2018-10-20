@@ -24,10 +24,9 @@ Lyx template for USTC  thesis
 ## 使用 ##
 
 * 在Main文档中编译可获得整篇Thesis；单独章节也可以单独编译。
-
 * 创建新章节文件，请copy Introduction.lyx, 然后重命名。如果直接新建文档，需要按照Introduction.lyx的文档属性重新设置，采用拷贝重命名的方法可以避免这个问题。
-
 * 更具体的介绍和使用技巧见模板中Introduction.yx 和 skill.lyx
+* Lyx 版本要求 >= 2.3
 
 
 

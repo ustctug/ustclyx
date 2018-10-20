@@ -1025,42 +1025,6 @@ status open
 \end_layout
 
 \begin_layout Subsection
-设置PDF meta属性
-\end_layout
-
-\begin_layout Standard
-PDF meta属性需要在在Main.lyx中的导言区设定，默认的属性如下，可以改成自己论文的信息：
-\end_layout
-
-\begin_layout LyX-Code
-
-\backslash
-hypersetup {        
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout LyX-Code
-pdftitle={A USTCer's Thesis},
-\begin_inset Newline newline
-\end_inset
-
-pdfauthor={A USTCer},
-\begin_inset Newline newline
-\end_inset
-
-pdfsubject={Thesis,USTC,University of Science and Technology of China}
-\end_layout
-
-\end_deeper
-\begin_layout LyX-Code
-}
-\end_layout
-
-\begin_layout Subsection
 编辑图片
 \end_layout
 
