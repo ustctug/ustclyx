@@ -282,8 +282,12 @@ http://www.lyx.org/
 \end_layout
 
 \begin_layout Standard
-可以使用git clone --recursive，将所有文件都下载下来： 
+可以使用git clone --recursive，将所有文件都下载下来：
+\end_layout
+
+\begin_layout Standard
 \begin_inset listings
+lstparams "numbers=left,numberstyle={\tiny},stepnumber=1,basicstyle={\footnotesize},breaklines=true,showstringspaces=false,tabsize=4,frame=shadowbox,commentstyle={\color{red!50!green!50!blue!50}},rulesepcolor={\color{red!20!green!20!blue!20}},keywordstyle={\color{blue!90}\bfseries},stringstyle={\ttfamily},keepspaces=true,breakindent=22pt,flexiblecolumns=true,breakautoindent=true,breakindent=4em,texcl=true,aboveskip=1em"
 inline false
 status open
 
@@ -299,7 +303,11 @@ git clone --recursive https://github.com/jmcui/USTC-Lyx.git
 
 \begin_layout Standard
 或者从科大Lug服务器上git下来 
+\end_layout
+
+\begin_layout Standard
 \begin_inset listings
+lstparams "numbers=left,numberstyle={\tiny},stepnumber=1,basicstyle={\footnotesize},breaklines=true,showstringspaces=false,tabsize=4,frame=shadowbox,commentstyle={\color{red!50!green!50!blue!50}},rulesepcolor={\color{red!20!green!20!blue!20}},keywordstyle={\color{blue!90}\bfseries},stringstyle={\ttfamily},keepspaces=true,breakindent=22pt,flexiblecolumns=true,breakautoindent=true,breakindent=4em,texcl=true,aboveskip=1em"
 inline false
 status open
 
