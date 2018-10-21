@@ -8,6 +8,8 @@
 \begin_preamble
 %Created by jmcui 
 %\graphicspath{{C:/Users/jmcui/Desktop/Lyxthesis/USTCthesis}}
+
+\usepackage{xcolor}
 \end_preamble
 \options doctor,twoside
 \use_default_options false

@@ -8,6 +8,7 @@
 \begin_preamble
 %Created by jmcui 
 %\graphicspath{{C:/Users/jmcui/Desktop/Lyxthesis/USTCthesis}}
+\usepackage{xcolor}
 \end_preamble
 \options doctor,twoside
 \use_default_options false
@@ -117,6 +118,11 @@ name "chap:使用技巧"
 \align center
 建议你阅读完本章，尤其是\SpecialChar LyX
 的新用户
+\end_layout
+
+\begin_layout Standard
+\align center
+如有需求，可直接copy本章的例子，然后修改用于您的文档。
 \end_layout
 
 \begin_layout Section
@@ -340,6 +346,7 @@ tex转换为lyx
 
 \begin_layout Standard
 \begin_inset listings
+lstparams "numbers=left,numberstyle={\tiny},stepnumber=1,basicstyle={\footnotesize},breaklines=true,showstringspaces=false,tabsize=4,frame=shadowbox,commentstyle={\color{red!50!green!50!blue!50}},rulesepcolor={\color{red!20!green!20!blue!20}},keywordstyle={\color{blue!90}\bfseries},stringstyle={\ttfamily},keepspaces=true,breakindent=22pt,flexiblecolumns=true,breakautoindent=true,breakindent=4em,texcl=true,aboveskip=1em"
 inline false
 status open
 
@@ -359,10 +366,6 @@ LyX 2.2
 bin
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -374,6 +377,7 @@ bin
 
 \begin_layout Standard
 \begin_inset listings
+lstparams "numbers=left,numberstyle={\tiny},stepnumber=1,basicstyle={\footnotesize},breaklines=true,showstringspaces=false,tabsize=4,frame=shadowbox,commentstyle={\color{red!50!green!50!blue!50}},rulesepcolor={\color{red!20!green!20!blue!20}},keywordstyle={\color{blue!90}\bfseries},stringstyle={\ttfamily},keepspaces=true,breakindent=22pt,flexiblecolumns=true,breakautoindent=true,breakindent=4em,texcl=true,aboveskip=1em"
 inline false
 status open
 
@@ -780,13 +784,29 @@ literal "true"
 
 \begin_layout Standard
 要实现C、Matlab等语言语法高亮显示，在Latex中可以使用listings包。相应的在Lyx中可以用以下方式插入： 插入\SpecialChar menuseparator
-Program Listing。在
-输入框内写入代码后，右键设置Listing的属性即可（右键Settings）。
+Program Listing。
+\series bold
+将光标放入Listing环境中，注意在菜单 编辑\SpecialChar menuseparator
+列表选项 中设置列表选项的属性。
 \end_layout
 
 \begin_layout Standard
+下面是一个已经设置好的Listing，阴影背景，语言设置为python。如有需要可以直接复制这个Listing，根据自己需求修改，例如更改语言。
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+python listing
+\end_layout
+
+\end_inset
+
+
 \begin_inset listings
-lstparams "breaklines=true,language=Python,numbers=left,numberstyle={\tiny},stepnumber=1"
+lstparams "language=Python,numbers=left,numberstyle={\tiny},stepnumber=1,breaklines=true,tabsize=4,frame=shadowbox,commentstyle={\color{red!50!green!50!blue!50}},rulesepcolor={\color{red!20!green!20!blue!20}},keywordstyle={\color{blue!90}\bfseries},showstringspaces=false,stringstyle={\ttfamily},keepspaces=true,breakindent=22pt,basicstyle={\footnotesize},showspaces=false,flexiblecolumns=true,breaklines=true,breakautoindent=true,breakindent=4em,texcl=true,aboveskip=1em"
 inline false
 status open
 
@@ -904,6 +924,7 @@ href
 
 \begin_layout Standard
 \begin_inset listings
+lstparams "numbers=left,numberstyle={\tiny},stepnumber=1,basicstyle={\footnotesize},breaklines=true,showstringspaces=false,tabsize=4,frame=shadowbox,commentstyle={\color{red!50!green!50!blue!50}},rulesepcolor={\color{red!20!green!20!blue!20}},keywordstyle={\color{blue!90}\bfseries},stringstyle={\ttfamily},keepspaces=true,breakindent=22pt,flexiblecolumns=true,breakautoindent=true,breakindent=4em,texcl=true,aboveskip=1em"
 inline false
 status open
 
