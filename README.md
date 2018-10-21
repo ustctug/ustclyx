@@ -21,6 +21,12 @@ Lyx template for USTC  thesis
   git clone --recursive https://github.com/jmcui/USTC-Lyx.git
   ````
 
+  或者从科大Lug服务器上git下来
+
+  ```bash
+  git clone --recursive https://git.lug.ustc.edu.cn/jmcui/ustclyx.git
+  ```
+
 ## 使用 ##
 
 * 在Main文档中编译可获得整篇Thesis；单独章节也可以单独编译。
