@@ -1,9 +1,9 @@
-USTC-Lyx
-========
-
-Lyx template for USTC  thesis 
-
 # 中国科学技术大学学位论文Lyx模板 #
+
+[![Travis build](https://travis-ci.org/jmcui/USTC-Lyx.svg?branch=master)](https://travis-ci.org/jmcui/USTC-Lyx)
+[![Github downloads](https://img.shields.io/github/downloads/jmcui/USTC-Lyx/total.svg)](https://github.com/jmcui/USTC-Lyx/releases)
+[![GitHub release](https://img.shields.io/github/release/jmcui/USTC-Lyx/all.svg)](https://github.com/jmcui/USTC-Lyx/releases/latest)
+[![GitHub commits](https://img.shields.io/github/commits-since/jmcui/USTC-Lyx/latest.svg)](https://github.com/jmcui/USTC-Lyx/commits/master)
 
 
 ## 目的 ##
