@@ -13,9 +13,11 @@ Lyx template for USTC  thesis
 
 ## 下载 ##
 
-* 本项目使用了ustcthesis项目，作为一个git子模块。克隆或者下载时，注意确认ustcthesis中所有文件都下载了，并保持文件夹名和相对路径。
+* 下载最新压缩文件https://github.com/jmcui/USTC-Lyx/releases，解压即可使用。
 
-  可以使用git clone --recursive，将所有文件都下载下来：
+* 此外，还可以使用git克隆项目。
+
+  本项目使用了ustcthesis项目，作为一个git子模块。因此，注意使用git clone --recursive，将所有文件都下载下来，模版才能直接使用。否则需要用ustcthesis的文件(夹)替换文件链接。
 
   ````bash
   git clone --recursive https://github.com/jmcui/USTC-Lyx.git
@@ -27,9 +29,11 @@ Lyx template for USTC  thesis
   git clone --recursive https://git.lug.ustc.edu.cn/jmcui/ustclyx.git
   ```
 
-* LyX 版本要求 >= 2.3。
+* 注意不要使用github 网页上code中“Clone or download” 按钮下载。这样方法不能下载子项目，导致文件缺失。
 
 ## 使用 ##
+
+* LyX 版本要求 >= 2.3。
 
 * 选择学位论文类型：
 
