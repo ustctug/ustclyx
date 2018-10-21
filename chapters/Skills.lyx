@@ -120,20 +120,64 @@ name "chap:使用技巧"
 \end_layout
 
 \begin_layout Section
-帮助文档
-\end_layout
-
-\begin_layout Standard
-\SpecialChar LyX
-的帮助文档比较全面，有问题的时候要先到此处来寻找，新用户可以几分钟看一下入门教程，上手是非常快的。
-\end_layout
-
-\begin_layout Section
 目录和导航
 \end_layout
 
 \begin_layout Standard
-利用目录导航可以方便在不同章节和对象中切换。可以测试点一下导航菜单。也可以将文档菜单中的目录选项打开进行导航，如果你的显示器为宽屏，推荐你这么做。
+借助目录导航，可以在章节和对象之间迅速切换，方便定位、寻找、编辑内容。在导航菜单中可以看到文档的目录结构。也可以在大纲边栏中显示目录结构、公式引用、图片列表等。
+使用本模版时，建议打开大纲边栏工具栏，在Lyx菜单中：　视图\SpecialChar menuseparator
+大纲边栏。
+\end_layout
+
+\begin_layout Section
+新建\SpecialChar LyX
+文件
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:新建Lyx文件"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+如果你需要新建一章，这一章以单独文件存在（我们称为章节文件），建议你这么做，省去设置文档的麻烦：
+\end_layout
+
+\begin_layout Enumerate
+复制论文模板的第一章，并将其重命名为你需要的名字。
+\end_layout
+
+\begin_layout Enumerate
+在主文档（Main.lyx）正文处include你刚才重命名的文件。插入的位置由你需要编排的章节顺序而定，新章节编辑修改这个文件即可。
+\end_layout
+
+\begin_layout Standard
+与Tex类似，\SpecialChar LyX
+可以将一个大文件分割成几个小文件，然后通过include的方法整合到一块编译。具体操作：插入\SpecialChar menuseparator
+文件\SpecialChar menuseparator
+子文档。使用包含命令的文件为主文档，被包含的文件为
+子文档，子文档是.lyx也可以包含tex文件。
+\end_layout
+
+\begin_layout Standard
+如果你已经有tex文件，没必要将它转换为lyx，可以只保留
+\backslash
+begin{document}和
+\backslash
+end{document}之间的文档内容，然后将之包进主文档 (如果导言区有自定义命令，将它复制到主文档的导言区)。
+\end_layout
+
+\begin_layout Standard
+如果include文件是.lyx文件，可以在文档\SpecialChar menuseparator
+首选项\SpecialChar menuseparator
+文档类 中设置主文档。设置主文档优点是子文档的导航是按主文档中的所有章节进行导航，而不是按照子文档中本章节进
+行导航。使用导航功能便于在文件和章节中切换。由于模板中子文档都已经设置为Main.lyx为主文档，所以通过复制的方法新建章节文件时，选项就不需要设置了。
+\end_layout
+
+\begin_layout Standard
+使用章节文件的优势是你在这个章节文件里直接编译查看，此时编译就只对本章进行，可以节省大量的编译时间。而编译整篇论文只需要在Main文档中编译查看即可。
 \end_layout
 
 \begin_layout Section
@@ -203,11 +247,12 @@ centering
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename ../ustc_logo_text.eps
+	filename /Users/LitePhosphor/Seafile/MyWork/2018/USTC-Lyx/ustcthesis/figures/ustc_logo_fig.pdf
+	lyxscale 20
 	width 5cm
 
 \end_inset
@@ -216,7 +261,7 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-USTC Name
+USTC Logo
 \end_layout
 
 \end_inset
@@ -230,11 +275,11 @@ USTC Name
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename ../ustc_logo_fig.eps
+	filename /Users/LitePhosphor/Seafile/MyWork/2018/USTC-Lyx/ustcthesis/figures/ustc_logo_text.pdf
 	lyxscale 30
 	width 4cm
 
@@ -244,7 +289,7 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-USTC Logo
+USTC Name
 \end_layout
 
 \end_inset
@@ -282,79 +327,6 @@ USTC Elements
 \end_inset
 
 
-\end_layout
-
-\begin_layout Section
-新建Lyx文件
-\begin_inset CommandInset label
-LatexCommand label
-name "sec:新建Lyx文件"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-如果你需要新建一章，这一章以单独文件存在（我们称为章节文件），建议你这么做，省去设置文档的麻烦：
-\end_layout
-
-\begin_layout Enumerate
-复制论文模板的第一章，并将其重命名为你需要的名字。
-\end_layout
-
-\begin_layout Enumerate
-在主文档（Main.lyx）正文处include你刚才重命名的文件。插入的位置由你需要编排的章节顺序而定，新章节编辑修改这个文件即可。
-\end_layout
-
-\begin_layout Standard
-与Tex类似，Lyx可以将一个大文件分割成几个小文件，然后通过include的方法整合到一块编译。具体操作：插入\SpecialChar menuseparator
-文件\SpecialChar menuseparator
-子文档。使用包含命令的文件为主文档，被包含的
-文件为子文档，子文档是.lyx也可以包含tex文件。
-\end_layout
-
-\begin_layout Standard
-如果你已经有tex文件，没必要将它转换为lyx，可以只保留
-\backslash
-begin{document}和
-\backslash
-end{document}之间的文档内容，然后将之包进主文档 (如果导言区有自定义命令，将它复制到主文档的导言区)。
-\end_layout
-
-\begin_layout Standard
-如果include文件是.lyx文件，可以在文档\SpecialChar menuseparator
-首选项\SpecialChar menuseparator
-文档类 中设置主文档。设置主文档优点是子文档的导航是按主文档中的所有章节进行导航，而不是按照子文档中本章节进
-行导航。使用导航功能便于在文件和章节中切换。由于模板中子文档都已经设置为Main.lyx为主文档，所以通过复制的方法新建章节文件时，选项就不需要设置了。
-\end_layout
-
-\begin_layout Standard
-使用章节文件的优势是你在这个章节文件里直接编译查看，此时编译就只对本章进行，可以节省大量的编译时间。而编译整篇论文只需要在Main文档中编译查看即可。
-\end_layout
-
-\begin_layout Section
-常见问题
-\end_layout
-
-\begin_layout Subsection
-语言问题
-\begin_inset CommandInset label
-LatexCommand label
-name "sub:语言问题"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-如果从直接从其他Lyx文件直接copy内容，粘贴导论文中，有可能会出现语言冲突的问题。出现这个问题后，Lyx 会在文字下面标注下滑线，看起来像修订模式的标注一样
-。这是因为copy过来的文字内容，设置的是英文语言，而本模版语言为简体中文。可以通过如下操作解决：
-\end_layout
-
-\begin_layout Standard
-选中有问题的文字，鼠标右键调出属性菜单，语言，选中文。
 \end_layout
 
 \begin_layout Section
@@ -444,6 +416,15 @@ noprefix "false"
 \end_inset
 
 。
+\end_layout
+
+\begin_layout Section
+使用Lyx帮助文档
+\end_layout
+
+\begin_layout Standard
+\SpecialChar LyX
+的帮助文档比较全面，新用户可以几分钟看一下入门教程，上手是非常快的。更详细问题可以用户手册里查看。
 \end_layout
 
 \begin_layout Section
@@ -794,7 +775,7 @@ literal "true"
 \end_layout
 
 \begin_layout Section
-书写程序代码
+程序代码
 \end_layout
 
 \begin_layout Standard
@@ -897,6 +878,122 @@ error = [0,0,1,1,1,1] # Variable flag to trigger Frame.ErrorAlert()
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+超链接
+\end_layout
+
+\begin_layout Standard
+本模版已经预定义好的href，用来更友好地插入超链接。
+\end_layout
+
+\begin_layout Standard
+菜单 插入\SpecialChar menuseparator
+自定义内嵌项\SpecialChar menuseparator
+href
+\end_layout
+
+\begin_layout Standard
+链接的文字直接写入，而链接通过参数插入。鼠标右键点击链接对象，调出菜单，点'链接'。
+\end_layout
+
+\begin_layout Standard
+这通过定义Lyx中InsetLayout实现的，实现可以参考USTCthesis.layou文件，主要定义部分如下：
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+InsetLayout Flex:href 
+\end_layout
+
+\begin_layout Plain Layout
+
+LyXType         custom 
+\end_layout
+
+\begin_layout Plain Layout
+
+# LyXType       element 
+\end_layout
+
+\begin_layout Plain Layout
+
+LabelString 	超链接
+\end_layout
+
+\begin_layout Plain Layout
+
+LatexType       Command
+\end_layout
+
+\begin_layout Plain Layout
+
+LatexName       href
+\end_layout
+
+\begin_layout Plain Layout
+
+Decoration 	 Classic
+\end_layout
+
+\begin_layout Plain Layout
+
+Argument 1
+\end_layout
+
+\begin_layout Plain Layout
+
+	Mandatory 1 	
+\end_layout
+
+\begin_layout Plain Layout
+
+	LabelString 	"Link"
+\end_layout
+
+\begin_layout Plain Layout
+
+	LabelFont
+\end_layout
+
+\begin_layout Plain Layout
+
+  		Shape         Up
+\end_layout
+
+\begin_layout Plain Layout
+
+  		Color         blue
+\end_layout
+
+\begin_layout Plain Layout
+
+	EndFont
+\end_layout
+
+\begin_layout Plain Layout
+
+EndArgument
+\end_layout
+
+\begin_layout Plain Layout
+
+End
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+参考这个例子，可以自己定义新的InsetLayout，来对应latex命令。相比直接插入latex命令，定义Layout后，显示会更友好、方便。
 \end_layout
 
 \begin_layout Section
@@ -1051,6 +1148,53 @@ File Formats 来设置相应图片格式的编辑器。这样对图片右键，�
 外观\SpecialChar menuseparator
 显示 即时预览 选择打开。 可以查看一些latex中复杂的公式，例如费曼图、XY-pic、树形图等。即时预览是通过预编译实现的，所以显示速度会有些
 慢。
+\end_layout
+
+\begin_layout Section
+常见问题和解决方法
+\end_layout
+
+\begin_layout Subsection
+语言问题
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:语言问题"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+如果从直接从其他Lyx文件直接copy内容，粘贴导论文中，有可能会出现语言冲突的问题。出现这个问题后，Lyx 会在文字下面标注下滑线，看起来像修订模式的标注一样
+。这是因为copy过来的文字内容，设置的是英文语言，而本模版语言为简体中文。可以通过如下操作解决：
+\end_layout
+
+\begin_layout Standard
+选中有问题的文字，鼠标右键调出属性菜单，语言，选中文。
+\end_layout
+
+\begin_layout Subsection
+超链接编译错误
+\end_layout
+
+\begin_layout Standard
+如果使用lyx中默认定义的‘超链接’，会导致href重新载入。而ustecthesis中href已经载入，两次载入会导致出错。这个错误不会中断编译，选择继续输出
+内容，仍然能得到最终文档。
+\end_layout
+
+\begin_layout Standard
+解决方法： 使用本模版已经预定义好的href，替换掉超链接。
+\end_layout
+
+\begin_layout Standard
+菜单 插入\SpecialChar menuseparator
+自定义内嵌项\SpecialChar menuseparator
+href
+\end_layout
+
+\begin_layout Standard
+链接的文字直接写入，而链接通过参数插入。鼠标右键点击链接对象，调出菜单，点'链接'。
 \end_layout
 
 \end_body

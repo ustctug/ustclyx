@@ -24,7 +24,7 @@ NoStyle	EnglishAbstract
 NoStyle      Cover
 \end_local_layout
 \language chinese-simplified
-\language_package babel
+\language_package none
 \inputencoding gbk
 \fontencoding global
 \font_roman "default" "default"
@@ -158,24 +158,46 @@ NoStyle      Cover
 
 \begin_layout Standard
 本Lyx模版的底层就是ustcthesis模版，
-\begin_inset CommandInset href
-LatexCommand href
-name "github链接"
-target "https://github.com/ustctug/ustcthesis"
-literal "false"
+\begin_inset Flex href
+status open
+
+\begin_layout Plain Layout
+github链接
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+https://github.com/ustctug/ustcthesis
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
 。感谢众多USTCer的努力，这个模版已经是研究生院认可的学位论文模版
-\begin_inset CommandInset href
-LatexCommand href
-name "学位论文模版"
-target "https://gradschool.ustc.edu.cn/ylb/xw.html"
-literal "false"
+\begin_inset Flex href
+status open
+
+\begin_layout Plain Layout
+学位论文模版
+\begin_inset Argument 1
+status collapsed
+
+\begin_layout Plain Layout
+https://gradschool.ustc.edu.cn/ylb/xw.html
+\end_layout
 
 \end_inset
 
-。主要在ustcthesis模版加了一个Lyx层(USTCtheisis.layout文件)。
+
+\end_layout
+
+\end_inset
+
+。 本Lyx模版主要在ustcthesis模版加了一个Lyx层(USTCtheisis.layout文件)。
 \end_layout
 
 \begin_layout Standard
@@ -198,17 +220,26 @@ noprefix "false"
 \end_layout
 
 \begin_layout Subsection
-安装CTex
+安装Texlive
 \end_layout
 
 \begin_layout Standard
-为了支持众多的模板，建议安装ctex 的full版本(1.3`G)。
-\begin_inset Flex URL
+请参考ustcthesis中
+\begin_inset Flex href
 status open
 
 \begin_layout Plain Layout
+新手指南
+\begin_inset Argument 1
+status open
 
-http://www.ctex.org/CTeXDownload
+\begin_layout Plain Layout
+https://github.com/ustctug/ustcthesis/wiki/新手指南
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -225,7 +256,7 @@ Lyx版本需求：>= Lyx2.3
 \end_layout
 
 \begin_layout Standard
-可以到Lyx官方网站下载最新的Lyx版本。如果已经装了CTex，安装时Lyx会自动识别tex目录，并进行配置。Lyx 官方网站： 
+到Lyx官方网站下载最新的Lyx版本。Texlive，安装时Lyx会自动识别tex目录，并进行配置。Lyx 官方网站： 
 \begin_inset Flex URL
 status collapsed
 
@@ -239,16 +270,100 @@ http://www.lyx.org/
 
 \end_layout
 
+\begin_layout Subsection
+下载模版
+\end_layout
+
+\begin_layout Standard
+本模版使用了ustcthesis项目，作为一个git子模块。克隆或者下载时，注意确认ustcthesis中所有文件都已下载，并保持文件夹名和相对路径。
+ 
+\end_layout
+
+\begin_layout Standard
+可以使用git clone --recursive，将所有文件都下载下来： 
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+git clone --recursive https://github.com/jmcui/USTC-Lyx.git
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+编辑和编译论文
+\end_layout
+
+\begin_layout Itemize
+在Main文档中编译可获得整篇Thesis；单独章节也可以单独编译。 
+\end_layout
+
+\begin_layout Itemize
+创建新章节文件，请copy Introduction.lyx, 然后重命名。如果直接新建文档，需要按照Introduction.lyx的文档属性重新设置，采用拷贝重
+命名的方法可以避免这个问题。 
+\end_layout
+
+\begin_layout Itemize
+更具体的介绍和使用技巧见模板中Introduction.yx 和 skill.lyx 
+\end_layout
+
 \begin_layout Section
 模板参数
 \end_layout
 
 \begin_layout Standard
-参考ustcthesis模版参数
+参考ustcthesis模版参数.
 \end_layout
 
-\begin_layout Section
-模板结构
+\begin_layout Standard
+\begin_inset Flex href
+status open
+
+\begin_layout Plain Layout
+ustcthesis模版on github
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+https://github.com/ustctug/ustcthesis
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex href
+status open
+
+\begin_layout Plain Layout
+ustcthesis模版 on ustc lug
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+https://git.lug.ustc.edu.cn/ustctug/ustcthesis
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body

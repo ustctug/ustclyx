@@ -9,11 +9,11 @@ Lyx template for USTC  thesis
 ## 目的 ##
 
 
-中国科学技术大学学位论文Lyx模板，方便USTCer编辑学位论文。
+中国科学技术大学学位论文Lyx模板，方便USTCer编辑学位论文。包含博士、硕士、学士模版。
 
 ## 下载 ##
 
-* 本项目使用了ustcthesis项目，作为一个git子模块。克隆或者下载时，注意确认ustcthesis中所有内用下载下来了，并保持文件夹名和相对路径。
+* 本项目使用了ustcthesis项目，作为一个git子模块。克隆或者下载时，注意确认ustcthesis中所有文件都下载了，并保持文件夹名和相对路径。
 
   可以使用git clone --recursive，将所有文件都下载下来：
 
@@ -43,9 +43,6 @@ Lyx template for USTC  thesis
 
 主要前两点，引入latex优点的同时，克服编辑文本不友好、不直观问题。避免反复编译文档，因此可以极大提高撰写论文的效率。设计本论文模版的目的就是为了方便广大USTCer攥写学位论文。
 
-本Lyx模版的底层就是ustcthesis模版，[github链接](https://github.com/ustctug/ustcthesis)。感谢众多USTCer的努力，这个模版已经是研究生院认可的学位论文模版[学位论文模版](https://gradschool.ustc.edu.cn/ylb/xw.html)。主要在ustcthesis模版加了一个Lyx层(USTCtheisis.layout文件)来实现。
+## 模版原理
 
-## 实现 ##
-
-* 底层模板USTCthesis.cls直接设置ctex获得，因此模板兼容ctex命令。
-* 在USTCthesis.layout中设置了Lyx与latex命令的对应关系
+本Lyx模版的latex使用ustcthesis模版，[github链接](https://github.com/ustctug/ustcthesis)。感谢众多USTCer的努力，这个模版已经是研究生院认可的学位论文模版[学位论文模版](https://gradschool.ustc.edu.cn/ylb/xw.html)。本模版主要在ustcthesis模版上加了一个Lyx layout层 (USTCtheisis.layout文件)，在此基础上定义了一些常用的命令，以方便编辑文档。

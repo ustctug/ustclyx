@@ -73,7 +73,7 @@ theorems-ams
 \end_modules
 \maintain_unincluded_children false
 \language chinese-simplified
-\language_package babel
+\language_package none
 \inputencoding gbk
 \fontencoding global
 \font_roman "default" "default"
@@ -167,9 +167,9 @@ Main 文档
 \end_layout
 
 \begin_layout Enumerate
-整体结构，导航。同目录下USTCthesis.layout 为Lyx的 布局文件（或称为layout 文件）。注意使用 文档\SpecialChar menuseparator
-目录 或者 导航菜单
- 切换章节。
+整体结构，导航。同目录下USTCthesis.layout 为\SpecialChar LyX
+的 布局文件（或称为layout 文件）。注意使用 视图\SpecialChar menuseparator
+大纲边栏 或者 导航菜单 切换章节。
 \end_layout
 
 \begin_layout Enumerate
