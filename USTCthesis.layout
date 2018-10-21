@@ -144,8 +144,30 @@ Style Denotation
 		ddl.denotation dt { font-weight: bold; }
 	EndHTMLStyle
 End
+
 #####################################
 
+# Custom Inset Layout
+InsetLayout Flex:href
+LyXType         custom
+# LyXType         element
+LabelString 	超链接
+LatexType       Command
+LatexName       href
+Decoration 	   Classic
+Argument 1
+	Mandatory 1
+	LabelString 	"Link"
+	LabelFont
+  		Shape         Up
+  		Color         blue
+	EndFont
+EndArgument
+End
+
+#####################################
+
+# delete style
 NoStyle Part
 NoStyle Part*
 NoStyle Bibliography
@@ -155,23 +177,4 @@ NoStyle Date
 NoStyle Address
 NoStyle Right_Address
 NoStyle Cover
-
-InsetLayout Flex:href
-LyXType         custom
-# LyXType         element
-LabelString 	超链接
-LatexType       Command
-LatexName       href
-Decoration 	   Classic
-
-Argument 1
-	Mandatory 1
-	LabelString 	"Link"
-	LabelFont
-  		Shape         Up
-  		Color         blue
-	EndFont
-EndArgument
-
-End
-
+NoStyle Denotation

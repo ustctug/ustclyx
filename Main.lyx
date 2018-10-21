@@ -173,15 +173,11 @@ Main 文档
 \end_layout
 
 \begin_layout Enumerate
-包含文件注意使用相对路径。
+包含子文件时注意使用相对路径，便于整个项目移动。
 \end_layout
 
 \begin_layout Enumerate
-单独章节的lyx文件可以单独编译查看，不必在Main文档中编译查看而浪费时间。
-\end_layout
-
-\begin_layout Enumerate
-可以在Main文件里直接添加章节格式，而没必要一定包含文件，但不建议如此。
+子章节lyx文件可以单独编译查看，不必在Main文档中编译查，节省查看时间。
 \end_layout
 
 \end_inset
@@ -201,12 +197,14 @@ status open
 封面设置，在主文档Main.lyx的导言区设置：
 \end_layout
 
+\begin_deeper
 \begin_layout Plain Layout
 文档\SpecialChar menuseparator
 首选项\SpecialChar menuseparator
 latex导言区
 \end_layout
 
+\end_deeper
 \end_inset
 
 
@@ -248,7 +246,7 @@ status open
 \end_layout
 
 \begin_layout Enumerate
-FrontMatter.lyx文件。可进入此文件编辑，把不需要的部注释掉。或者参考例子添加内容。
+FrontMatter.lyx文件。可进入此文件编辑，把不需要的部注释掉，或者参考例子添加内容。
 \end_layout
 
 \end_inset
@@ -272,10 +270,37 @@ filename "./chapters/FrontMatter.lyx"
 
 \begin_layout Standard
 \begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
 status open
 
+\begin_layout Plain Layout
+正文章节
+\end_layout
+
 \begin_layout Enumerate
-章节排序只需要把include的顺序改变即可。也可以直接包含 tex文件
+章节排序只需要把include的顺序改变即可。也可以直接包含 tex文件。
+\end_layout
+
+\begin_layout Enumerate
+新建LyX文件，需要copy已有的子章节，例如Introduction.lyx，然后重命名文件，最点击菜单 插入\SpecialChar menuseparator
+文件\SpecialChar menuseparator
+子文档，选择子文档。
+\end_layout
+
+\begin_layout Enumerate
+Tip: 编辑论文时，可以从Skill.lyx直接copy需要的格式，然后在此基础上修改。
 \end_layout
 
 \end_inset
@@ -308,7 +333,11 @@ filename "chapters/Skills.lyx"
 status open
 
 \begin_layout Plain Layout
-参考文献用Bibtex实现，要放在Main文档中，其他子文当可以引用
+参考文献
+\end_layout
+
+\begin_layout Plain Layout
+参考文献用Bibtex实现。需在Main文档中，其他子文当方可引用。
 \end_layout
 
 \end_inset
@@ -328,9 +357,16 @@ bibfiles "Ref"
 \end_layout
 
 \begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand include
-filename "chapters/Appendix.lyx"
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+附录
+\end_layout
+
+\begin_layout Plain Layout
+在Apendix.lyx中设置了附录，需在底页之前放置。底页后放置章序号会被省略。
+\end_layout
 
 \end_inset
 
@@ -338,12 +374,9 @@ filename "chapters/Appendix.lyx"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-已在Apendix.lyx中设置开始附录，要在底页之前放置，底页之后会省去章的序号
-\end_layout
+\begin_inset CommandInset include
+LatexCommand include
+filename "chapters/Appendix.lyx"
 
 \end_inset
 

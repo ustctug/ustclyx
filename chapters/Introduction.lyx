@@ -226,7 +226,7 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
-请参考ustcthesis中
+请参考ustcthesis中的
 \begin_inset Flex href
 status open
 
@@ -322,11 +322,32 @@ git clone --recursive https://git.lug.ustc.edu.cn/jmcui/ustclyx.git
 \end_layout
 
 \begin_layout Subsection
-编辑和编译论文
+使用
 \end_layout
 
 \begin_layout Itemize
-在Main文档中编译可获得整篇Thesis；单独章节也可以单独编译。 
+选择学位论文类型： 打开Main.lyx文档，菜单 文档\SpecialChar menuseparator
+首选项\SpecialChar menuseparator
+文档类\SpecialChar menuseparator
+文档类选项。填写文档类选项，默认为doctor。 
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+doctor 博士模版 
+\end_layout
+
+\begin_layout Description
+master 硕士模版 
+\end_layout
+
+\begin_layout Description
+bachelor 学士模版 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Main.lyx文档中点击[查看]图标，可获得整篇Thesis的pdf；在子章节文件中，点击[查看]图标，获得单独章节的pdf。
 \end_layout
 
 \begin_layout Itemize
@@ -335,15 +356,59 @@ git clone --recursive https://git.lug.ustc.edu.cn/jmcui/ustclyx.git
 \end_layout
 
 \begin_layout Itemize
-更具体的介绍和使用技巧见模板中Introduction.yx 和 skill.lyx 
+更具体的介绍、使用技巧，见模板中Introduction.yx 和 skill.lyx 
 \end_layout
 
 \begin_layout Section
-模板参数
+模板选项
 \end_layout
 
 \begin_layout Standard
-参考ustcthesis模版参数.
+本Lyx模版的latex使用ustcthesis模版。本模版主要在ustcthesis模版上加了一个Lyx layout层 (USTCtheisis.layout
+文件)，在此基础上定义了一些常用的命令，以方便编辑文档。
+\end_layout
+
+\begin_layout Standard
+ustcthesis中模版选项：
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "numbers=left,numberstyle={\tiny},stepnumber=1,basicstyle={\footnotesize},breaklines=true,showstringspaces=false,tabsize=4,frame=shadowbox,commentstyle={\color{red!50!green!50!blue!50}},rulesepcolor={\color{red!20!green!20!blue!20}},keywordstyle={\color{blue!90}\bfseries},stringstyle={\ttfamily},keepspaces=true,breakindent=22pt,flexiblecolumns=true,breakautoindent=true,breakindent=4em,texcl=true,aboveskip=1em"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+% 学位论文类选项 
+\end_layout
+
+\begin_layout Plain Layout
+
+doctor|master|bachelor [academic|professional] [chinese|english] [print|pdf]
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+% 参考文献选项 
+\end_layout
+
+\begin_layout Plain Layout
+
+[super|numebers|authoryear]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+详细请参考ustcthesis模版选项.
 \end_layout
 
 \begin_layout Standard
