@@ -116,6 +116,10 @@ NoStyle	EnglishAbstract
 修改底层latex模版，使用ustcthesis模版。博士，硕士，学士模版通用了。
 \end_layout
 
+\begin_layout Itemize
+添加了自定义超链接 InsetLayout，以后新的Layout例子可以参考这个例子扩展。
+\end_layout
+
 \end_deeper
 \begin_layout Itemize
 3/11-2014 
@@ -141,7 +145,7 @@ makebookspline中给出（最好用命令直接将标题中的回车删除，需
 \end_layout
 
 \begin_layout Itemize
-添加listings包
+添加一个设置的比较漂亮的listings例子
 \end_layout
 
 \end_deeper
@@ -151,18 +155,6 @@ makebookspline中给出（最好用命令直接将标题中的回车删除，需
 
 \begin_layout Itemize
 04/11-2012 修正最初版本的一些bug；去掉模板中冗余的些命令；整理使用技巧一章
-\end_layout
-
-\begin_layout Chapter
-存在问题
-\end_layout
-
-\begin_layout Itemize
-ustctthesis中listing没有设置，后续需要更新ustcthesis模版
-\end_layout
-
-\begin_layout Itemize
-编译时，href包报错。应该是href包load了两次。继续输出可以编译出内容，这个问题影响倒是不大。
 \end_layout
 
 \end_body

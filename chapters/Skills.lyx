@@ -104,7 +104,7 @@ NoStyle	EnglishAbstract
 \begin_body
 
 \begin_layout Chapter
-使用技巧
+使用技巧和格式模板
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:使用技巧"
@@ -122,7 +122,7 @@ name "chap:使用技巧"
 
 \begin_layout Standard
 \align center
-如有需求，可直接copy本章的例子，然后修改用于您的文档。
+直接copy本章的格式模板，用于您的文档。
 \end_layout
 
 \begin_layout Section
@@ -257,7 +257,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename /Users/LitePhosphor/Seafile/MyWork/2018/USTC-Lyx/ustcthesis/figures/ustc_logo_fig.pdf
+	filename D:/Users/LitePhosphor/Seafile/MyWork/2018/USTC-Lyx/ustcthesis/figures/ustc_logo_fig.pdf
 	lyxscale 20
 	width 5cm
 
@@ -285,7 +285,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename /Users/LitePhosphor/Seafile/MyWork/2018/USTC-Lyx/ustcthesis/figures/ustc_logo_text.pdf
+	filename D:/Users/LitePhosphor/Seafile/MyWork/2018/USTC-Lyx/ustcthesis/figures/ustc_logo_text.pdf
 	lyxscale 30
 	width 4cm
 
@@ -748,8 +748,11 @@ reference "fig:USTC-Elements"
 \begin_layout Standard
 参考文献用Bibtex实现（插入\SpecialChar menuseparator
 目录/列表\SpecialChar menuseparator
-Bibtex引用），已经放置在在Main文档中，这样其他子文当可以使用文献引工具引用里面的条目。添加文献只需要在Ref.
-bib中添加条目，然后在文中引用即可。可以使用Jabref直接编辑bib文件
+Bibtex引用），已经放置在在Main文档中，因此不需要再设置。其他子文当自动会引用主文档的Bibtex。
+\end_layout
+
+\begin_layout Standard
+添加文献只需要在Ref.bib中添加条目，然后在文中引用即可。可以使用Jabref直接编辑bib文件
 \begin_inset Flex URL
 status collapsed
 
@@ -760,18 +763,90 @@ http://jabref.sourceforge.net/
 
 \end_inset
 
-。可以通过工具\SpecialChar menuseparator
-首选项\SpecialChar menuseparator
-File Handing\SpecialChar menuseparator
-File Formats 来设置对应文件的编辑器。
+。
 \end_layout
 
 \begin_layout Standard
-这是范例
-\begin_inset CommandInset citation
-LatexCommand cite
-key "faraon2010resonant"
-literal "true"
+通过工具\SpecialChar menuseparator
+首选项\SpecialChar menuseparator
+File Handing\SpecialChar menuseparator
+File Formats 来设置bib对应文件的编辑器。
+\end_layout
+
+\begin_layout Standard
+点击Jabref中的引用按钮里插入文献：Jabref首选项中设置 lyx pipe 路径 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+
+\backslash
+.
+\backslash
+pipe
+\backslash
+lyxpipe 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+然后在LyX 中设置pipe路径 ，然后重启
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+
+\backslash
+.
+\backslash
+pipe
+\backslash
+lyxpipe
+\end_layout
 
 \end_inset
 
@@ -791,7 +866,7 @@ Program Listing。
 \end_layout
 
 \begin_layout Standard
-下面是一个已经设置好的Listing，阴影背景，语言设置为python。如有需要可以直接复制这个Listing，根据自己需求修改，例如更改语言。
+下面是一个已经设置好的Listing，阴影背景，语言设置为python。如有需要，复制这个Listing然后修改，例如更改语言等参数。
 \end_layout
 
 \begin_layout Standard
@@ -915,7 +990,34 @@ href
 \end_layout
 
 \begin_layout Standard
-链接的文字直接写入，而链接通过参数插入。鼠标右键点击链接对象，调出菜单，点'链接'。
+文字直接写入，而链接通过插入参数。鼠标右键点击链接对象，调出菜单，点'Link'。
+\end_layout
+
+\begin_layout Standard
+下面是一个超链接例子。如有需求可以直接复制这个例子，修改即可。
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex href
+status open
+
+\begin_layout Plain Layout
+中国科学技术大学学位论文LyX模板
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+https://github.com/jmcui/USTC-Lyx
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1171,7 +1273,7 @@ File Formats 来设置相应图片格式的编辑器。这样对图片右键，�
 慢。
 \end_layout
 
-\begin_layout Section
+\begin_layout Chapter
 常见问题和解决方法
 \end_layout
 
