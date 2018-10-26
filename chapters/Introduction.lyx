@@ -390,6 +390,10 @@ Main.lyx文档中点击[查看]图标，可获得整篇Thesis的pdf；在子章�
 
 \begin_layout Itemize
 创建新章节文件，请拷贝 Introduction.lyx, 然后重命名。
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 \begin_inset Box Boxed
 position "t"
 hor_pos "c"
@@ -417,6 +421,7 @@ status open
  
 \end_layout
 
+\end_deeper
 \begin_layout Itemize
 更具体的介绍、使用技巧，见模板中Introduction.lyx 和 skill.lyx 
 \end_layout
