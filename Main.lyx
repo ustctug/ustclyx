@@ -167,9 +167,13 @@ Main 文档
 \end_layout
 
 \begin_layout Enumerate
-整体结构，导航。同目录下USTCthesis.layout 为\SpecialChar LyX
-的 布局文件（或称为layout 文件）。注意使用 视图\SpecialChar menuseparator
-大纲边栏 或者 导航菜单 切换章节。
+整体结构，导航子章节。同目录下USTCthesis.layout 为\SpecialChar LyX
+的 布局文件（或称为layout 文件）。
+\end_layout
+
+\begin_layout Enumerate
+注意打开菜单： 视图\SpecialChar menuseparator
+大纲边栏 ，或者使用菜单 导航，以便 导航切换章节。
 \end_layout
 
 \begin_layout Enumerate

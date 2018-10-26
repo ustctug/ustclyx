@@ -159,7 +159,7 @@ NoStyle      Cover
 \end_layout
 
 \begin_layout Standard
-本Lyx模版的底层就是ustcthesis模版，
+本LyX模版的底层就是ustcthesis模版，
 \begin_inset Flex href
 status open
 
@@ -199,7 +199,7 @@ https://gradschool.ustc.edu.cn/ylb/xw.html
 
 \end_inset
 
-。 本Lyx模版主要在ustcthesis模版加了一个Lyx层(USTCtheisis.layout文件)。
+。 本LyX模版主要在ustcthesis模版加了一个LyX层(USTCtheisis.layout文件)。
 \end_layout
 
 \begin_layout Standard
@@ -213,7 +213,7 @@ noprefix "false"
 
 \end_inset
 
-章如何新建章节文件。
+章。编辑论文时，很多格式可以直接从这一章中直接copy。
 \end_layout
 
 \begin_layout Section
@@ -258,13 +258,51 @@ Lyx版本需求：>= Lyx2.3
 \end_layout
 
 \begin_layout Standard
-到Lyx官方网站下载最新的Lyx版本。Texlive，安装时Lyx会自动识别tex目录，并进行配置。Lyx 官方网站： 
+到Lyx官方网站下载最新的LyX版本。Texlive，安装时Lyx会自动识别tex目录，并进行配置。Lyx 官方网站： 
 \begin_inset Flex URL
 status collapsed
 
 \begin_layout Plain Layout
 
 http://www.lyx.org/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+USTCer 推荐校内在线安装, 注意选择 “Change default repository”，并且选择中国科大的 mirror：
+\end_layout
+
+\begin_layout Itemize
+Windows系统： http://mirrors.ustc.edu.cn/CTAN/systems/texlive/tlnet/install-tl-windows.
+exe 
+\end_layout
+
+\begin_layout Itemize
+其他系统： http://mirrors.ustc.edu.cn/CTAN/systems/texlive/tlnet/install-tl-unx.tar.gz
+ 
 \end_layout
 
 \end_inset
@@ -351,12 +389,36 @@ Main.lyx文档中点击[查看]图标，可获得整篇Thesis的pdf；在子章�
 \end_layout
 
 \begin_layout Itemize
-创建新章节文件，请copy Introduction.lyx, 然后重命名。如果直接新建文档，需要按照Introduction.lyx的文档属性重新设置，采用拷贝重
-命名的方法可以避免这个问题。 
+创建新章节文件，请拷贝 Introduction.lyx, 然后重命名。
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+如果直接新建文档，需要按照Introduction.lyx的文档属性重新设置，而采用拷贝重命名的方法可以避免这个问题。
+\end_layout
+
+\end_inset
+
+ 
 \end_layout
 
 \begin_layout Itemize
-更具体的介绍、使用技巧，见模板中Introduction.yx 和 skill.lyx 
+更具体的介绍、使用技巧，见模板中Introduction.lyx 和 skill.lyx 
 \end_layout
 
 \begin_layout Section
