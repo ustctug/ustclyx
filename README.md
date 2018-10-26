@@ -15,7 +15,7 @@
 
 ## 下载 ##
 
-* 下载最新发布版本，压缩文件 https://github.com/jmcui/USTC-Lyx/releases , 解压即可使用。
+* 下载最新发布版本，压缩文件 https://github.com/ustctug/ustclyx/releases , 解压即可使用。
 
 * 此外，还可以使用git克隆项目，从而下载最新版，或者参与项目开发。
 
@@ -23,12 +23,12 @@
 
   ````bash
   # linux或Mac系统
-  git clone --recursive https://github.com/jmcui/USTC-Lyx.git
+  git clone --recursive https://github.com/ustctug/ustclyx.git
   ````
 
   ````bash
   # windows 系统用 -c core.symlinks=true 选项， 保证链接正确
-  git clone -c core.symlinks=true  --recursive https://github.com/jmcui/USTC-Lyx.git
+  git clone -c core.symlinks=true  --recursive https://github.com/ustctug/ustclyx.git
   ````
 
   或者从中国科大Lug服务器上git下来
