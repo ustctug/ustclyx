@@ -15,7 +15,7 @@
 
 ## 下载 ##
 
-* 下载最新压缩文件 https://github.com/jmcui/USTC-Lyx/releases , 解压即可使用。
+* 下载最新发布版本，压缩文件 https://github.com/jmcui/USTC-Lyx/releases , 解压即可使用。
 
 * 此外，还可以使用git克隆项目，从而下载最新版，或者参与项目开发。
 
