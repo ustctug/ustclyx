@@ -39,12 +39,20 @@
   ```
   ````bash
   # windows 系统用 -c core.symlinks=true 选项， 保证链接正确
-  git clone -c core.symlinks=true  --recursive https://github.com/jmcui/USTC-Lyx.git
+  git clone -c core.symlinks=true  --recursive https://git.lug.ustc.edu.cn/jmcui/ustclyx.git
   ````
 
   
 
   Note: 不要使用github 网页上code中“Clone or download” 按钮下载。这样方法不能下载子项目，导致文件缺失。
+
+  Note：git子模块更新命令
+
+  ```bash
+  git submodule update --recursive --remote
+  ```
+
+  
 
 ## 使用 ##
 

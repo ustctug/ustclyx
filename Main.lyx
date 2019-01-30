@@ -35,8 +35,9 @@
 % \ensecretlevel{Secret}    % Top secret|Highly secret|Secret
 
 
-%
+% load packages
 \usepackage{bibentry,natbib}
+\usepackage{hyperref}
 
 %%图、表的格式化引用
 \newrefformat{fig}{\hyperref[#1]{图\ref*{#1}\,}}

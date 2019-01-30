@@ -7,7 +7,10 @@
 \textclass USTCthesis
 \begin_preamble
 %Created by jmcui 
-%\graphicspath{{C:/Users/jmcui/Desktop/Lyxthesis/USTCthesis}}
+
+\usepackage{xcolor}
+\usepackage{hyperref}
+%\graphicspath{{figures/}}
 \end_preamble
 \options doctor,twoside
 \use_default_options false
@@ -107,6 +110,16 @@ NoStyle	EnglishAbstract
 修改记录
 \end_layout
 
+\begin_layout Itemize
+1/30-2019
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+升级模版兼容 ustcthesis V3.1.03
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
 10/20-2018
 \end_layout
