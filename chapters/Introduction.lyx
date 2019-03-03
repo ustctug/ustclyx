@@ -18,6 +18,7 @@
 \master ../Main.lyx
 \begin_modules
 theorems-ams
+algorithm2e
 \end_modules
 \maintain_unincluded_children false
 \begin_local_layout
@@ -108,7 +109,7 @@ NoStyle      Cover
 \begin_body
 
 \begin_layout Chapter
-本Lyx模板介绍
+本LyX模板介绍
 \end_layout
 
 \begin_layout Section
@@ -252,7 +253,7 @@ https://github.com/ustctug/ustcthesis/wiki/新手指南
 \end_layout
 
 \begin_layout Subsection
-安装Lyx
+安装LyX
 \end_layout
 
 \begin_layout Standard
