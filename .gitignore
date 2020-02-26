@@ -1,3 +1,7 @@
+# ignore folder
+release/
+
+# ignore temp file types
 *.acn
 *.acr
 *.alg

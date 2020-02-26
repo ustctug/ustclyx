@@ -269,7 +269,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename ../figures/ustc_logo_fig.pdf
+	filename ../figures/ustc-badge.pdf
 	lyxscale 20
 	width 5cm
 
@@ -297,7 +297,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename ../figures/ustc_logo_text.pdf
+	filename ../figures/ustc-name.pdf
 	lyxscale 30
 	width 4cm
 
