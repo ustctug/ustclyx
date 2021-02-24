@@ -7,6 +7,7 @@ cp *.bib ./release/
 cp ./ustcthesis/ustcthesis-*.bst ./release/
 cp ./ustcthesis/ustcthesis.cls ./release/
 cp -R ./ustcthesis/figures ./release/
+cp ./USTCthesis.layout ./release/
 
 
 cp -R ./chapters ./release/
