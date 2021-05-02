@@ -58,15 +58,9 @@
 
 * 下载安装 Texlive， 参考 [ustcthesis 新手指南](https://github.com/ustctug/ustcthesis/wiki/新手指南)。
 
-  USTCer 推荐校内在线安装, 注意选择 “Change default repository”，并且选择中国科大的 mirror：
+  推荐使用镜像文件安装，镜像ISO文件下载：
 
-  * Windows系统：
-
-     <http://mirrors.ustc.edu.cn/CTAN/systems/texlive/tlnet/install-tl-windows.exe>
-
-  * 其他系统：
-
-    <http://mirrors.ustc.edu.cn/CTAN/systems/texlive/tlnet/install-tl-unx.tar.gz>
+  * http://mirrors.ustc.edu.cn/CTAN/systems/texlive/Images/texlive.iso
 
 * 下载最新版[LyX](https://www.lyx.org/Download). LyX 版本要求 >= 2.3。
 
