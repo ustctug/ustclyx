@@ -15,7 +15,10 @@
 
 ## 下载 ##
 
-* 下载最新发布版本，压缩文件 https://github.com/ustctug/ustclyx/releases , 解压即可使用。
+* 下载最新发布版本
+
+  * 从ustclug服务器下载： https://git.lug.ustc.edu.cn/jmcui/ustclyx/-/releases ， 下载V**.zip 文件。
+  * 从github下载：  https://github.com/ustctug/ustclyx/releases , 解压即可使用。
 
 * 此外，还可以使用git克隆项目，从而下载最新版，或者参与项目开发。
 
@@ -52,7 +55,11 @@
   git submodule update --recursive --remote
   ```
 
-  
+* 从ustclug 下载ustcthesis
+
+  模版底层使用了github上的latex 模版ustcthesis，如果遇到github不能访问的情况，可以使用ustclug服务器里 [ustcthesis模版镜像](https://git.lug.ustc.edu.cn/ustctug/ustcthesis)，下载ustcthesis模版。
+
+  https://git.lug.ustc.edu.cn/ustctug/ustcthesis
 
 ## 使用 ##
 
