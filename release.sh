@@ -15,12 +15,12 @@ cp ./ustcthesis/ustcthesis.cls ./release/
 cp -R ./ustcthesis/figures ./release/
 cp ./USTCthesis.layout ./release/
 
-
-cp -R ./chapters ./release/
+mkdir ./release/chapters
+cp ./chapters/*.lyx ./release/chapters/
 cp ./ustcthesis/ustcthesis.cls ./release/chapters/
 cp ./USTCthesis.layout ./release/chapters/
 
-FINDED_FILES=`find ./release/chapters -name *.lyx~`
+FINDED_FILES=`find . -name *.lyx~`
 for file in ${FINDED_FILES}
 do
     rm -rf ${file}

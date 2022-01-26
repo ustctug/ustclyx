@@ -8,7 +8,7 @@
 \begin_preamble
 %Created by jmcui 
 
-\usepackage{bibentry,natbib}
+\usepackage{bibentry}
 \usepackage{hyperref}
 %\graphicspath{{figures/}}
 \end_preamble

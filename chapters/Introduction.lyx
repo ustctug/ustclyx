@@ -10,7 +10,6 @@
 
 
 \usepackage{xcolor}
-\usepackage[sort]{natbib}
 %\graphicspath{{figures/}}
 \usepackage{hyperref}
 \end_preamble
