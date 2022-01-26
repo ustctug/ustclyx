@@ -9,10 +9,11 @@
 %Created by jmcui 
 
 \usepackage{xcolor}
-\usepackage{hyperref}
 %\graphicspath{{figures/}}
+
+\usepackage{hyperref}
 \end_preamble
-\options doctor,twoside
+\options degree=doctor
 \use_default_options false
 \master ../Main.lyx
 \begin_modules
@@ -72,9 +73,10 @@ NoStyle	EnglishAbstract
 \use_package stackrel 0
 \use_package stmaryrd 0
 \use_package undertilde 0
-\cite_engine basic
-\cite_engine_type default
-\biblio_style plain
+\cite_engine natbib
+\cite_engine_type numerical
+\biblio_style plainnat
+\biblio_options sort
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
@@ -1215,6 +1217,18 @@ lyxpipe
 
 \end_layout
 
+\begin_layout Standard
+参考文献测试：引用
+\begin_inset CommandInset citation
+LatexCommand cite
+key "childress2006faulttolerant,faraon2010resonant,thomas2010adiamond"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 程序代码
 \begin_inset CommandInset label
@@ -1774,6 +1788,48 @@ href
 
 \begin_layout Standard
 链接的文字直接写入，而链接通过参数插入。鼠标右键点击链接对象，调出菜单，点'链接'。
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ifx
+\backslash
+myref
+\backslash
+undefined
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+btprint "btPrintCited"
+bibfiles "../Ref"
+options "../ustcthesis-numerical"
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+fi
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body

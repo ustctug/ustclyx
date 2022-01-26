@@ -326,6 +326,10 @@ LatexCommand tableofcontents
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -343,6 +347,11 @@ hspace{1em}格}%加入目录
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset FloatList figure
 
@@ -352,6 +361,10 @@ hspace{1em}格}%加入目录
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -362,6 +375,11 @@ status open
 addcontentsline{toc}{chapter}{插
 \backslash
 hspace{1em}图}%加入目录
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset

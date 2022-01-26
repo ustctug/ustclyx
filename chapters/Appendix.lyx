@@ -112,6 +112,20 @@ NoStyle	EnglishAbstract
 \end_layout
 
 \begin_layout Itemize
+1/26-2022
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+升级模版兼容 ustcthesis V3.3.01
+\end_layout
+
+\begin_layout Itemize
+每章添加参考文献，单独编译章节的时可以显示参考文献列表，引用处也不是问号了。利用tex条件判断代码控制编译，解决与主文档参考文献冲突的问题。
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
 1/30-2019
 \end_layout
 
@@ -169,6 +183,55 @@ makebookspline中给出（最好用命令直接将标题中的回车删除，需
 
 \begin_layout Itemize
 04/11-2012 修正最初版本的一些bug；去掉模板中冗余的些命令；整理使用技巧一章
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+ifx
+\backslash
+myref
+\backslash
+undefined 
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+btprint "btPrintCited"
+bibfiles "../Ref"
+options "../ustcthesis-numerical"
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+fi
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body

@@ -1,5 +1,11 @@
 #!/bin/bash
-rm -R ./release/*
+if [ ! -d "./release/" ];then
+	mkdir release
+else
+	rm -R ./release/*
+fi
+
+cp *.tex ./release/
 cp *.lyx ./release/
 cp *.md ./release/
 cp *.bib ./release/
@@ -11,6 +17,13 @@ cp ./USTCthesis.layout ./release/
 
 
 cp -R ./chapters ./release/
-rm ./release/chapters/*.lyx~
 cp ./ustcthesis/ustcthesis.cls ./release/chapters/
 cp ./USTCthesis.layout ./release/chapters/
+
+FINDED_FILES=`find ./release/chapters -name *.lyx~`
+for file in ${FINDED_FILES}
+do
+    rm -rf ${file}
+done
+
+echo 'reflesh release folder'

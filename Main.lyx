@@ -10,64 +10,19 @@
 % Created by jmcui 6-23-2011 @USTC
 % use USTCthesis class: https://github.com/jmcui/USTC-Lyx
 
-% 模版参数， 在文档类里设置，不能在本导言区设置。这里仅仅列出参数，供参考
-% doctor|master|bachelor [academic|professional] [chinese|english] [print|pdf]
-% [super|numebers|authoryear]
-
-\title{中国科学技术大学\\学位论文模板示例文档}
-\author{李泽平}
-\major{数学与应用数学}
-\supervisor{华罗庚\ 教授}
-\cosupervisor{钱学森\ 教授}
-% \date{二〇一七年五月一日} % 注释掉则为今日
-% \professionaltype{专业学位类型}
-% \secretlevel{秘密}        % 绝密|机密|秘密，注释本行则不保密
-% \secretyear{20}           % 保密年限
-
-\entitle{An example of thesis template for University of Science and Technology
-  of China}
-\enauthor{Zeping Li}
-\enmajor{Mathematics and Applied Mathematics}
-\ensupervisor{Prof. Luogeng Hua}
-\encosupervisor{Prof. Xuesen Qian}
-% \endate{May 1, 2017}      % Today if commented
-% \enprofessionaltype{Professional degree type}
-% \ensecretlevel{Secret}    % Top secret|Highly secret|Secret
+% Template setup parameter
+% degree      = doctor | master | bachelor
+% degree-type = academic | professional
+% language    = chinese | english
+% fontset     = windows | mac | ubuntu | fandol
 
 
-% load packages
-\usepackage{bibentry,natbib}
-\usepackage{hyperref}
+\def\myref{Ref}
+\usepackage{bibentry}
 
-%%图、表的格式化引用
-\newrefformat{fig}{\hyperref[#1]{图\ref*{#1}\,}}
-\newrefformat{eq}{\hyperref[#1]{式\ref*{#1}\,}}
-\newrefformat{tab}{\hyperref[#1]{表\ref*{#1}\,}}
-
-%%listings设置
-\usepackage{listings}
-\usepackage{xcolor}
-\lstset{
-  tabsize=4, %
-  frame=shadowbox, %把代码用带有阴影的框圈起来
-  commentstyle=\color{red!50!green!50!blue!50},%浅灰色的注释
-  rulesepcolor=\color{red!20!green!20!blue!20},%代码块边框为淡青色
-  keywordstyle=\color{blue!90}\bfseries, %代码关键字的颜色为蓝色，粗体
-  showstringspaces=false,%不显示代码字符串中间的空格标记
-  stringstyle=\ttfamily, % 代码字符串的特殊格式
-  keepspaces=true, %
-  breakindent=22pt, %
-  basicstyle=\footnotesize, %
-  showspaces=false, %
-  flexiblecolumns=true, %
-  breaklines=true,%对过长的代码自动换行
-  breakautoindent=true,%
-  breakindent=4em,%
-  texcl=true,
-  aboveskip=1em %代码块边框
-}
+\input{ustcsetup.tex}
 \end_preamble
-\options doctor
+\options degree=doctor
 \use_default_options false
 \begin_modules
 theorems-ams
@@ -170,7 +125,7 @@ Main 文档
 
 \begin_layout Enumerate
 整体结构，导航子章节。同目录下USTCthesis.layout 为\SpecialChar LyX
-的 布局文件（或称为layout 文件）。
+的布局文件（或称为layout 文件）。
 \end_layout
 
 \begin_layout Enumerate
@@ -200,17 +155,9 @@ status open
 \end_layout
 
 \begin_layout Enumerate
-封面设置，在主文档Main.lyx的导言区设置：
+封面设置。在ustcsetup.tex文件里设置封面。可以使用vscode编辑tex文件。
 \end_layout
 
-\begin_deeper
-\begin_layout Plain Layout
-文档\SpecialChar menuseparator
-首选项\SpecialChar menuseparator
-latex导言区
-\end_layout
-
-\end_deeper
 \end_inset
 
 
@@ -339,11 +286,7 @@ filename "chapters/Skills.lyx"
 status open
 
 \begin_layout Plain Layout
-参考文献
-\end_layout
-
-\begin_layout Plain Layout
-参考文献用Bibtex实现。需在Main文档中，其他子文当方可引用。
+参考文献。
 \end_layout
 
 \end_inset

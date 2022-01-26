@@ -69,9 +69,10 @@ NoStyle	EnglishAbstract
 \use_package stackrel 0
 \use_package stmaryrd 0
 \use_package undertilde 0
-\cite_engine basic
-\cite_engine_type default
-\biblio_style plain
+\cite_engine natbib
+\cite_engine_type numerical
+\biblio_style plainnat
+\biblio_options sort
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
@@ -184,6 +185,55 @@ status open
 
 \backslash
 bibentry{fu2008coupling}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+ifx
+\backslash
+myref
+\backslash
+undefined 
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+btprint "btPrintCited"
+bibfiles "../Ref"
+options "../ustcthesis-numerical"
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+fi
 \end_layout
 
 \end_inset
